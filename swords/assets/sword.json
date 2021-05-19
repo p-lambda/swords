@@ -1,0 +1,22 @@
+{
+  "sword_dev_1113": {
+    "fp_rel": "raw/data/sword/dev-20201114T013807Z-001.zip",
+    "checksum": "821fc4e8ed17177133df1638385ce17680691797e671b8930f45a771ab7db723",
+    "private": true
+  },
+  "sword_test_1113": {
+    "fp_rel": "raw/data/sword/test-20201114T013923Z-001.zip",
+    "checksum": "d39a006949b58e58cc9574875235467ba4c5625bdd8a1b0511f1d549701c95bc",
+    "private": true
+  },
+  "sword_step3_1117": {
+    "fp_rel": "raw/data/sword/step3-20201118T053019Z-001.zip",
+    "checksum": "519f30975e4321f25e5f67215846d370175dd6bc736f7004259973045581659a",
+    "private": true
+  },
+  "sword_human_1119": {
+    "fp_rel": "raw/data/sword/superhuman-20201119T220851Z-001.zip",
+    "checksum": "f9f05b3cc20186a75771fb312815cd51c84a24980c5cdb2c03ac938a0dc10e5b",
+    "private": true
+  }
+}

@@ -9,6 +9,7 @@ docker run \
   --gpus device=${AVAILABLE_GPUS} \
   --name swords \
   -v $(pwd)/../swords:/swords/swords \
+  -v $(pwd)/../assets:/swords/assets \
   -v $(pwd)/../notebooks:/swords/notebooks \
   -p 8080:8080 \
   -p 8888:8888 \

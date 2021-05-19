@@ -1,0 +1,45 @@
+{
+  "coinco_gz": {
+    "fp_rel": "raw/data/coinco/coinco.xml.gz",
+    "url": "https://www.ims.uni-stuttgart.de/documents/ressourcen/korpora/coinco/coinco.xml.gz",
+    "checksum": "c845a2717a043a9bb485cbdb2d4cacd69c0a054571aef914fd0e1f487421282a"
+  },
+  "coinco_devids": {
+    "fp_rel": "raw/data/coinco/devset-tokenIDs.txt",
+    "url": "https://www.ims.uni-stuttgart.de/documents/ressourcen/korpora/coinco/devset-tokenIDs.txt",
+    "checksum": "f6d31675564bb538f54668eb7834dd73a3b0c1dfa530e01c815d6ee773ea0e31"
+  },
+  "coinco_testids": {
+    "fp_rel": "raw/data/coinco/testset-tokenIDs.txt",
+    "url": "https://www.ims.uni-stuttgart.de/documents/ressourcen/korpora/coinco/testset-tokenIDs.txt",
+    "checksum": "8a824e57313e2f5ba8ede3e904969a88eb9384d351f22a9ad5607d4ec3b43bf8"
+  },
+  "coinco_melamud_candidates": {
+    "fp_rel": "raw/data/coinco/coinco.no_problematic.candidates",
+    "url": "https://raw.githubusercontent.com/orenmel/lexsub/4197fccf489670fdc4e5510971f4288b9d0b1625/datasets/coinco.no_problematic.candidates",
+    "checksum": "891e2e5bf87f7537ab839892e598996645246b9735601239429e9ce982e7fff4"
+  },
+  "coinco_melamud_preprocessed": {
+    "fp_rel": "raw/data/coinco/coinco.no_problematic.preprocessed",
+    "url": "https://raw.githubusercontent.com/orenmel/lexsub/0d6e6da0871c79333d955ceb55f5b7b36d95994f/datasets/coinco_all.no_problematic.preprocessed",
+    "checksum": "03f0b1fd26338c91f5189d8fde2550effc44e744798137c9f4ab8bfe76696312"
+  },
+  "coinco_turk": {
+    "fp_rel": "raw/data/coinco/allTurkResults.csv",
+    "checksum": "db08a6a4b92111f476f724a2887809f2a91a0195de9c9f55b91252bb415600ce",
+    "private": true
+  },
+  "coinco_masc_sources": {
+    "fp_rel": "raw/data/coinco/MASC-2.0.0.zip",
+    "url": "http://www.anc.org/downloads/MASC-2.0.0.zip",
+    "checksum": "f04ef0fb32ddc6061b1a74cfb1fb4a94a78410b9375543c31723a474bc5221ef"
+  },
+  "coinco_patch": {
+    "fp_rel": "raw/data/coinco/coinco.xml.patch",
+    "checksum": "54748f76e56828104bf1b75c560a33232c5655180c66280bbfe33504d9754e78"
+  },
+  "coinco_patched": {
+    "fp_rel": "raw/data/coinco/coinco_patched.xml.gz",
+    "checksum_gunzipped": "6ea7c6c101e155c71de37460c527f34775366b32a7d8ec603f1f56c6bc5e1798"
+  }
+}

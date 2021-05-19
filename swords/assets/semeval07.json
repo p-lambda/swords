@@ -1,0 +1,17 @@
+{
+  "semeval07": {
+    "fp_rel": "raw/data/semeval07/task10data.tar.gz",
+    "url": "http://www.dianamccarthy.co.uk/files/task10data.tar.gz",
+    "checksum": "8a2b206a2581b35c02c3b64783fddf019a35a43acdc0a821be8cfa26e4aff245"
+  },
+  "semeval07_entrants": {
+    "fp_rel": "raw/data/semeval07/lexsubsystems.tar.gz",
+    "url": "http://www.dianamccarthy.co.uk/files/lexsubsystems.tar.gz",
+    "checksum": "eec178b9b967319e7324e31a0a4823874ef2af3219ba2531a723cf938619b1bd"
+  },
+  "semeval07_candidates": {
+    "fp_rel": "raw/data/semeval07/lst.gold.candidates",
+    "url": "https://raw.githubusercontent.com/orenmel/lexsub/0d6e6da0871c79333d955ceb55f5b7b36d95994f/datasets/lst.gold.candidates",
+    "checksum": "d7e8a198a24803639ee2207b2784079b8915ecdfef3f1524008bc257b49cd34f"
+  }
+}

@@ -1,0 +1,866 @@
+--- coinco.xml	2020-10-08 10:53:14.807752889 -0700
++++ coinco_patched.xml	2020-10-08 10:53:16.671718387 -0700
+@@ -37266,7 +37266,7 @@
+       </token>
+       <token id="XXX" wordform="that" lemma="that" posMASC="XXX" posTT="IN/that" />
+       <token id="XXX" wordform="I" lemma="I" posMASC="XXX" posTT="PP" />
+-      <token id="2456" wordform="didn" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
++      <token id="2456" wordform="did" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
+         <substitutions>
+           <subst lemma="could" pos="MD" freq="1" />
+           <subst lemma="did not" pos="VVD NNS" freq="1" />
+@@ -37839,7 +37839,7 @@
+     </postcontext>
+     <tokens>
+       <token id="XXX" wordform="I" lemma="I" posMASC="XXX" posTT="PP" />
+-      <token id="2504" wordform="didn" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
++      <token id="2504" wordform="did" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
+         <substitutions>
+           <subst lemma="did not" pos="VVD NN" freq="1" />
+           <subst lemma="never" pos="VVD" freq="1" />
+@@ -38566,7 +38566,7 @@
+       <token id="XXX" wordform="so" lemma="so" posMASC="XXX" posTT="RB" />
+       <token id="XXX" wordform="that" lemma="that" posMASC="XXX" posTT="IN/that" />
+       <token id="XXX" wordform="she" lemma="she" posMASC="XXX" posTT="PP" />
+-      <token id="2554" wordform="wouldn" lemma="would" posMASC="NN" posTT="MD" problematic="no" >
++      <token id="2554" wordform="would" lemma="would" posMASC="NN" posTT="MD" problematic="no" >
+         <substitutions>
+           <subst lemma="could" pos="NNS" freq="1" />
+           <subst lemma="did not" pos="VVD JJ" freq="1" />
+@@ -42966,7 +42966,7 @@
+           <subst lemma="nitwit" pos="NN" freq="1" />
+         </substitutions>
+       </token>
+-      <token id="2861" wordform="hadn" lemma="have" posMASC="NN" posTT="VHD" problematic="no" >
++      <token id="2861" wordform="had" lemma="have" posMASC="NN" posTT="VHD" problematic="no" >
+         <substitutions>
+           <subst lemma="did not" pos="VVD NN" freq="1" />
+           <subst lemma="do" pos="VVD" freq="1" />
+@@ -43345,7 +43345,7 @@
+           <subst lemma="yet" pos="RB" freq="2" />
+         </substitutions>
+       </token>
+-      <token id="2891" wordform="hadn" lemma="have" posMASC="NN" posTT="VHD" problematic="no" >
++      <token id="2891" wordform="had" lemma="have" posMASC="NN" posTT="VHD" problematic="no" >
+         <substitutions>
+           <subst lemma="do" pos="VVD" freq="1" />
+           <subst lemma="had not" pos="VHD NN" freq="2" />
+@@ -43379,7 +43379,7 @@
+       <token id="XXX" wordform="," lemma="," posMASC="XXX" posTT="," />
+       <token id="XXX" wordform="so" lemma="so" posMASC="XXX" posTT="RB" />
+       <token id="XXX" wordform="I" lemma="I" posMASC="XXX" posTT="PP" />
+-      <token id="2894" wordform="wasn" lemma="be" posMASC="NN" posTT="VBD" problematic="no" >
++      <token id="2894" wordform="was" lemma="be" posMASC="NN" posTT="VBD" problematic="no" >
+         <substitutions>
+           <subst lemma="ai" pos="VVP" freq="1" />
+         </substitutions>
+@@ -46187,7 +46187,7 @@
+     <tokens>
+       <token id="XXX" wordform="“" lemma="“" posMASC="XXX" posTT="``" />
+       <token id="XXX" wordform="I" lemma="I" posMASC="XXX" posTT="PP" />
+-      <token id="3083" wordform="don" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
++      <token id="3083" wordform="do" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
+         <substitutions>
+           <subst lemma="could" pos="MD" freq="1" />
+           <subst lemma="do not" pos="VVP NN" freq="2" />
+@@ -49914,7 +49914,7 @@
+           <subst lemma="intelligence" pos="NN" freq="1" />
+         </substitutions>
+       </token>
+-      <token id="3334" wordform="hadn" lemma="have" posMASC="NN" posTT="VHD" problematic="no" >
++      <token id="3334" wordform="had" lemma="have" posMASC="NN" posTT="VHD" problematic="no" >
+         <substitutions>
+           <subst lemma="had not" pos="VHD NN" freq="1" />
+           <subst lemma="never" pos="NN" freq="1" />
+@@ -59317,7 +59317,7 @@
+       </token>
+       <token id="XXX" wordform="that" lemma="that" posMASC="XXX" posTT="IN/that" />
+       <token id="XXX" wordform="I" lemma="I" posMASC="XXX" posTT="PP" />
+-      <token id="3982" wordform="hadn" lemma="have" posMASC="NN" posTT="VHD" problematic="no" >
++      <token id="3982" wordform="had" lemma="have" posMASC="NN" posTT="VHD" problematic="no" >
+         <substitutions>
+           <subst lemma="did not" pos="VVD NN" freq="1" />
+           <subst lemma="do" pos="VVD" freq="2" />
+@@ -63313,7 +63313,7 @@
+     <tokens>
+       <token id="XXX" wordform="“" lemma="“" posMASC="XXX" posTT="``" />
+       <token id="XXX" wordform="I" lemma="I" posMASC="XXX" posTT="PP" />
+-      <token id="4267" wordform="don" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
++      <token id="4267" wordform="do" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
+         <substitutions>
+           <subst lemma="ca" pos="MD" freq="1" />
+           <subst lemma="do not" pos="VVP NN" freq="1" />
+@@ -65572,7 +65572,7 @@
+     </postcontext>
+     <tokens>
+       <token id="XXX" wordform="I" lemma="I" posMASC="XXX" posTT="PP" />
+-      <token id="4432" wordform="don" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
++      <token id="4432" wordform="do" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
+         <substitutions>
+           <subst lemma="do not" pos="VVP NN" freq="1" />
+         </substitutions>
+@@ -67259,7 +67259,7 @@
+     </postcontext>
+     <tokens>
+       <token id="XXX" wordform="I" lemma="I" posMASC="XXX" posTT="PP" />
+-      <token id="4557" wordform="couldn" lemma="could" posMASC="NN" posTT="MD" problematic="no" >
++      <token id="4557" wordform="could" lemma="could" posMASC="NN" posTT="MD" problematic="no" >
+         <substitutions>
+           <subst lemma="do" pos="VVD" freq="1" />
+         </substitutions>
+@@ -67772,7 +67772,7 @@
+       <token id="XXX" wordform="." lemma="." posMASC="XXX" posTT="SENT" />
+       <token id="XXX" wordform="nytimes" lemma="&lt;unknown&gt;" posMASC="XXX" posTT="NNS" />
+       <token id="XXX" wordform="." lemma="." posMASC="XXX" posTT="SENT" />
+-      <token id="XXX" wordform="com/syndicate" lemma="&lt;unknown&gt;" posMASC="XXX" posTT="NNS" />
++      <token id="XXX" wordform="com/" lemma="&lt;unknown&gt;" posMASC="XXX" posTT="NNS" />
+       <token id="4594" wordform="syndicate" lemma="for" posMASC="NN" posTT="IN" problematic="yes" >
+         <substitutions>
+           <subst lemma="for" pos="IN" freq="3" />
+@@ -69900,7 +69900,7 @@
+     </postcontext>
+     <tokens>
+       <token id="XXX" wordform="Amy" lemma="Amy" posMASC="XXX" posTT="NP" />
+-      <token id="4744" wordform="didn" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
++      <token id="4744" wordform="did" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
+         <substitutions>
+           <subst lemma="did not" pos="VVD JJ" freq="2" />
+           <subst lemma="have" pos="VHD" freq="1" />
+@@ -69934,7 +69934,7 @@
+       </token>
+       <token id="XXX" wordform="that" lemma="that" posMASC="XXX" posTT="IN/that" />
+       <token id="XXX" wordform="she" lemma="she" posMASC="XXX" posTT="PP" />
+-      <token id="4747" wordform="didn" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
++      <token id="4747" wordform="did" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
+         <substitutions>
+           <subst lemma="comprehend" pos="VVD" freq="1" />
+           <subst lemma="could" pos="MD" freq="1" />
+@@ -70740,7 +70740,7 @@
+           <subst lemma="stylist" pos="NN" freq="2" />
+         </substitutions>
+       </token>
+-      <token id="4802" wordform="hadn" lemma="have" posMASC="NN" posTT="VHD" problematic="no" >
++      <token id="4802" wordform="had" lemma="have" posMASC="NN" posTT="VHD" problematic="no" >
+         <substitutions>
+           <subst lemma="did not" pos="VVD NN" freq="1" />
+           <subst lemma="had not" pos="VHD NN" freq="1" />
+@@ -75833,7 +75833,7 @@
+       <token id="XXX" wordform="’s" lemma="be" posMASC="XXX" posTT="VBZ" />
+       <token id="XXX" wordform="why" lemma="why" posMASC="XXX" posTT="WRB" />
+       <token id="XXX" wordform="I" lemma="I" posMASC="XXX" posTT="PP" />
+-      <token id="5133" wordform="couldn" lemma="could" posMASC="NN" posTT="MD" problematic="no" >
++      <token id="5133" wordform="could" lemma="could" posMASC="NN" posTT="MD" problematic="no" >
+         <substitutions>
+           <subst lemma="did not" pos="VVD NN" freq="1" />
+           <subst lemma="do" pos="VVD" freq="1" />
+@@ -79567,7 +79567,7 @@
+       <token id="XXX" wordform="”" lemma="”" posMASC="XXX" posTT="&apos;&apos;" />
+       <token id="XXX" wordform="because" lemma="because" posMASC="XXX" posTT="IN" />
+       <token id="XXX" wordform="he" lemma="he" posMASC="XXX" posTT="PP" />
+-      <token id="5387" wordform="didn" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
++      <token id="5387" wordform="did" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
+         <substitutions>
+           <subst lemma="did not" pos="VVD NNS" freq="2" />
+           <subst lemma="had" pos="NN" freq="1" />
+@@ -79865,7 +79865,7 @@
+     </postcontext>
+     <tokens>
+       <token id="XXX" wordform="He" lemma="he" posMASC="XXX" posTT="PP" />
+-      <token id="5407" wordform="wasn" lemma="be" posMASC="NN" posTT="VBD" problematic="no" >
++      <token id="5407" wordform="was" lemma="be" posMASC="NN" posTT="VBD" problematic="no" >
+         <substitutions>
+           <subst lemma="be" pos="VBZ" freq="3" />
+         </substitutions>
+@@ -81523,7 +81523,7 @@
+     <tokens>
+       <token id="XXX" wordform="When" lemma="when" posMASC="XXX" posTT="WRB" />
+       <token id="XXX" wordform="she" lemma="she" posMASC="XXX" posTT="PP" />
+-      <token id="5510" wordform="didn" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
++      <token id="5510" wordform="did" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
+         <substitutions>
+           <subst lemma="did not" pos="VVD JJ" freq="1" />
+           <subst lemma="have" pos="VHD" freq="1" />
+@@ -83839,7 +83839,7 @@
+       </token>
+       <token id="XXX" wordform="and" lemma="and" posMASC="XXX" posTT="CC" />
+       <token id="XXX" wordform="we" lemma="we" posMASC="XXX" posTT="PP" />
+-      <token id="5669" wordform="couldn" lemma="could" posMASC="NN" posTT="MD" problematic="no" >
++      <token id="5669" wordform="could" lemma="could" posMASC="NN" posTT="MD" problematic="no" >
+         <substitutions>
+           <subst lemma="did not" pos="VVD NN" freq="1" />
+           <subst lemma="do" pos="VVD" freq="2" />
+@@ -85765,7 +85765,7 @@
+     </postcontext>
+     <tokens>
+       <token id="XXX" wordform="I" lemma="I" posMASC="XXX" posTT="PP" />
+-      <token id="5784" wordform="wasn" lemma="be" posMASC="NN" posTT="VBD" problematic="no" >
++      <token id="5784" wordform="was" lemma="be" posMASC="NN" posTT="VBD" problematic="no" >
+         <substitutions>
+           <subst lemma="ai" pos="VVP" freq="1" />
+         </substitutions>
+@@ -95479,7 +95479,7 @@
+     </postcontext>
+     <tokens>
+       <token id="XXX" wordform="He" lemma="he" posMASC="XXX" posTT="PP" />
+-      <token id="6429" wordform="didn" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
++      <token id="6429" wordform="did" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
+         <substitutions>
+           <subst lemma="did not" pos="VVD JJ" freq="2" />
+           <subst lemma="have" pos="VHD" freq="1" />
+@@ -95597,7 +95597,7 @@
+           <subst lemma="tree specimen" pos="NN NN" freq="1" />
+         </substitutions>
+       </token>
+-      <token id="6436" wordform="isn" lemma="be" posMASC="NN" posTT="VBZ" problematic="no" >
++      <token id="6436" wordform="is" lemma="be" posMASC="NN" posTT="VBZ" problematic="no" >
+         <substitutions>
+           <subst lemma="ai" pos="VVZ" freq="1" />
+           <subst lemma="is not" pos="VBZ JJ" freq="2" />
+@@ -95617,7 +95617,7 @@
+           <subst lemma="tree nymph" pos="NN NN" freq="1" />
+         </substitutions>
+       </token>
+-      <token id="6438" wordform="isn" lemma="be" posMASC="NN" posTT="VBZ" problematic="no" >
++      <token id="6438" wordform="is" lemma="be" posMASC="NN" posTT="VBZ" problematic="no" >
+         <substitutions>
+           <subst lemma="ai" pos="VVZ" freq="1" />
+           <subst lemma="is not" pos="VBZ JJ" freq="2" />
+@@ -97517,7 +97517,7 @@
+           <subst lemma="trot" pos="NN" freq="1" />
+         </substitutions>
+       </token>
+-      <token id="6562" wordform="didn" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
++      <token id="6562" wordform="did" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
+         <substitutions>
+           <subst lemma="could" pos="MD" freq="1" />
+           <subst lemma="did not" pos="VVD NN" freq="1" />
+@@ -98850,7 +98850,7 @@
+           <subst lemma="voice" pos="NN" freq="6" />
+         </substitutions>
+       </token>
+-      <token id="6658" wordform="couldn" lemma="could" posMASC="NN" posTT="MD" problematic="no" >
++      <token id="6658" wordform="could" lemma="could" posMASC="NN" posTT="MD" problematic="no" >
+         <substitutions>
+           <subst lemma="should" pos="MD" freq="2" />
+         </substitutions>
+@@ -99980,7 +99980,7 @@
+           <subst lemma="well" pos="RB" freq="3" />
+         </substitutions>
+       </token>
+-      <token id="XXX" wordform="…back" lemma="&lt;unknown&gt;" posMASC="XXX" posTT="JJ" />
++      <token id="XXX" wordform="…" lemma="&lt;unknown&gt;" posMASC="XXX" posTT="JJ" />
+       <token id="6730" wordform="back" lemma="to" posMASC="RB" posTT="TO" problematic="no" >
+         <substitutions>
+           <subst lemma="to" pos="TO" freq="5" />
+@@ -100709,7 +100709,7 @@
+       </token>
+       <token id="XXX" wordform="that" lemma="that" posMASC="XXX" posTT="IN/that" />
+       <token id="XXX" wordform="Dvorov" lemma="&lt;unknown&gt;" posMASC="XXX" posTT="NP" />
+-      <token id="6778" wordform="isn" lemma="be" posMASC="NN" posTT="VBZ" problematic="no" >
++      <token id="6778" wordform="is" lemma="be" posMASC="NN" posTT="VBZ" problematic="no" >
+         <substitutions>
+           <subst lemma="ai" pos="VVZ" freq="1" />
+           <subst lemma="be" pos="VBD" freq="1" />
+@@ -102468,7 +102468,7 @@
+           <subst lemma="officer" pos="NNS" freq="1" />
+         </substitutions>
+       </token>
+-      <token id="6896" wordform="wouldn" lemma="would" posMASC="NN" posTT="MD" problematic="no" >
++      <token id="6896" wordform="would" lemma="would" posMASC="NN" posTT="MD" problematic="no" >
+         <substitutions>
+           <subst lemma="could" pos="MD" freq="2" />
+           <subst lemma="did not" pos="VVD NN" freq="1" />
+@@ -104373,7 +104373,7 @@
+           <subst lemma="yet" pos="RB" freq="3" />
+         </substitutions>
+       </token>
+-      <token id="7028" wordform="hadn" lemma="have" posMASC="NN" posTT="VHD" problematic="no" >
++      <token id="7028" wordform="had" lemma="have" posMASC="NN" posTT="VHD" problematic="no" >
+         <substitutions>
+           <subst lemma="do" pos="VVD" freq="1" />
+           <subst lemma="had not" pos="VHD JJ" freq="1" />
+@@ -110917,7 +110917,7 @@
+         </substitutions>
+       </token>
+       <token id="XXX" wordform="," lemma="," posMASC="XXX" posTT="," />
+-      <token id="7465" wordform="isn" lemma="be" posMASC="NN" posTT="VBZ" problematic="yes" >
++      <token id="7465" wordform="is" lemma="be" posMASC="NN" posTT="VBZ" problematic="yes" >
+         <substitutions>
+           <subst lemma="is not" pos="VBZ JJ" freq="1" />
+         </substitutions>
+@@ -113198,7 +113198,7 @@
+     </postcontext>
+     <tokens>
+       <token id="XXX" wordform="Nepthys" lemma="&lt;unknown&gt;" posMASC="XXX" posTT="NNS" />
+-      <token id="7622" wordform="didn" lemma="do" posMASC="NN" posTT="VVD" problematic="yes" >
++      <token id="7622" wordform="did" lemma="do" posMASC="NN" posTT="VVD" problematic="yes" >
+         <substitutions>
+           <subst lemma="did not" pos="VVD JJ" freq="1" />
+         </substitutions>
+@@ -115038,7 +115038,7 @@
+     <tokens>
+       <token id="XXX" wordform="“" lemma="“" posMASC="XXX" posTT="``" />
+       <token id="XXX" wordform="He" lemma="he" posMASC="XXX" posTT="PP" />
+-      <token id="7748" wordform="wasn" lemma="be" posMASC="NN" posTT="VBD" problematic="no" >
++      <token id="7748" wordform="was" lemma="be" posMASC="NN" posTT="VBD" problematic="no" >
+         <substitutions>
+           <subst lemma="ai" pos="VVP" freq="1" />
+           <subst lemma="be" pos="VBZ" freq="1" />
+@@ -115560,7 +115560,7 @@
+       <token id="XXX" wordform="it" lemma="it" posMASC="XXX" posTT="PP" />
+       <token id="XXX" wordform="," lemma="," posMASC="XXX" posTT="," />
+       <token id="XXX" wordform="it" lemma="it" posMASC="XXX" posTT="PP" />
+-      <token id="7785" wordform="didn" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
++      <token id="7785" wordform="did" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
+         <substitutions>
+           <subst lemma="did not" pos="VVD NN" freq="1" />
+           <subst lemma="have" pos="VHD" freq="1" />
+@@ -116010,7 +116010,7 @@
+     </postcontext>
+     <tokens>
+       <token id="XXX" wordform="This" lemma="this" posMASC="XXX" posTT="DT" />
+-      <token id="7816" wordform="wasn" lemma="be" posMASC="NN" posTT="VBD" problematic="no" >
++      <token id="7816" wordform="was" lemma="be" posMASC="NN" posTT="VBD" problematic="no" >
+         <substitutions>
+           <subst lemma="be" pos="VBZ" freq="1" />
+         </substitutions>
+@@ -117012,7 +117012,7 @@
+       <token id="XXX" wordform="," lemma="," posMASC="XXX" posTT="," />
+       <token id="XXX" wordform="but" lemma="but" posMASC="XXX" posTT="CC" />
+       <token id="XXX" wordform="I" lemma="I" posMASC="XXX" posTT="PP" />
+-      <token id="7882" wordform="couldn" lemma="could" posMASC="NN" posTT="MD" problematic="no" >
++      <token id="7882" wordform="could" lemma="could" posMASC="NN" posTT="MD" problematic="no" >
+         <substitutions>
+           <subst lemma="did not" pos="VVD NN" freq="1" />
+           <subst lemma="do" pos="VVD" freq="1" />
+@@ -120150,7 +120150,7 @@
+         </substitutions>
+       </token>
+       <token id="XXX" wordform="," lemma="," posMASC="XXX" posTT="," />
+-      <token id="8082" wordform="don" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
++      <token id="8082" wordform="do" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
+         <substitutions>
+           <subst lemma="do not" pos="VVP JJ" freq="1" />
+           <subst lemma="never" pos="JJ" freq="1" />
+@@ -125290,7 +125290,7 @@
+       </token>
+       <token id="XXX" wordform="that" lemma="that" posMASC="XXX" posTT="IN/that" />
+       <token id="XXX" wordform="they" lemma="they" posMASC="XXX" posTT="PP" />
+-      <token id="8440" wordform="won" lemma="wo" posMASC="VBD" posTT="MD" problematic="no" >
++      <token id="8440" wordform="wo" lemma="wo" posMASC="VBD" posTT="MD" problematic="no" >
+         <substitutions>
+           <subst lemma="ca" pos="MD" freq="3" />
+           <subst lemma="should" pos="MD" freq="1" />
+@@ -125637,7 +125637,7 @@
+         </substitutions>
+       </token>
+       <token id="XXX" wordform="you" lemma="you" posMASC="XXX" posTT="PP" />
+-      <token id="8466" wordform="don" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
++      <token id="8466" wordform="do" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
+         <substitutions>
+           <subst lemma="ca" pos="MD" freq="1" />
+           <subst lemma="do not" pos="VVP NN" freq="1" />
+@@ -131507,7 +131507,7 @@
+           <subst lemma="platelet" pos="NNS" freq="1" />
+         </substitutions>
+       </token>
+-      <token id="8859" wordform="isn" lemma="be" posMASC="NN" posTT="VBZ" problematic="no" >
++      <token id="8859" wordform="is" lemma="be" posMASC="NN" posTT="VBZ" problematic="no" >
+         <substitutions>
+           <subst lemma="aim" pos="NN" freq="1" />
+           <subst lemma="is not" pos="VBZ NN" freq="2" />
+@@ -134088,7 +134088,7 @@
+       </token>
+       <token id="XXX" wordform="where" lemma="where" posMASC="XXX" posTT="WRB" />
+       <token id="XXX" wordform="it" lemma="it" posMASC="XXX" posTT="PP" />
+-      <token id="9037" wordform="wasn" lemma="be" posMASC="NN" posTT="VBD" problematic="no" >
++      <token id="9037" wordform="was" lemma="be" posMASC="NN" posTT="VBD" problematic="no" >
+         <substitutions>
+           <subst lemma="ai" pos="VVP" freq="1" />
+           <subst lemma="have" pos="VHD" freq="1" />
+@@ -134210,7 +134210,7 @@
+         </substitutions>
+       </token>
+       <token id="XXX" wordform="I" lemma="I" posMASC="XXX" posTT="PP" />
+-      <token id="9047" wordform="couldn" lemma="could" posMASC="NN" posTT="MD" problematic="no" >
++      <token id="9047" wordform="could" lemma="could" posMASC="NN" posTT="MD" problematic="no" >
+         <substitutions>
+           <subst lemma="do" pos="VVD" freq="1" />
+         </substitutions>
+@@ -137553,7 +137553,7 @@
+       </token>
+       <token id="XXX" wordform="," lemma="," posMASC="XXX" posTT="," />
+       <token id="XXX" wordform="why" lemma="why" posMASC="XXX" posTT="WRB" />
+-      <token id="9267" wordform="didn" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
++      <token id="9267" wordform="did" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
+         <substitutions>
+           <subst lemma="could" pos="MD" freq="1" />
+           <subst lemma="did not" pos="VVD NN" freq="1" />
+@@ -144396,7 +144396,7 @@
+     </postcontext>
+     <tokens>
+       <token id="XXX" wordform="You" lemma="you" posMASC="XXX" posTT="PP" />
+-      <token id="9732" wordform="don" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
++      <token id="9732" wordform="do" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
+         <substitutions>
+           <subst lemma="be n&apos;t" pos="NN NN" freq="1" />
+           <subst lemma="ca" pos="MD" freq="1" />
+@@ -150958,7 +150958,7 @@
+     <tokens>
+       <token id="XXX" wordform="“" lemma="“" posMASC="XXX" posTT="``" />
+       <token id="XXX" wordform="You" lemma="you" posMASC="XXX" posTT="PP" />
+-      <token id="10191" wordform="wouldn" lemma="would" posMASC="NN" posTT="MD" problematic="no" >
++      <token id="10191" wordform="would" lemma="would" posMASC="NN" posTT="MD" problematic="no" >
+         <substitutions>
+           <subst lemma="could" pos="MD" freq="1" />
+           <subst lemma="wo" pos="MD" freq="1" />
+@@ -154763,7 +154763,7 @@
+     <tokens>
+       <token id="XXX" wordform="When" lemma="when" posMASC="XXX" posTT="WRB" />
+       <token id="XXX" wordform="she" lemma="she" posMASC="XXX" posTT="PP" />
+-      <token id="10435" wordform="hadn" lemma="have" posMASC="NN" posTT="VHD" problematic="no" >
++      <token id="10435" wordform="had" lemma="have" posMASC="NN" posTT="VHD" problematic="no" >
+         <substitutions>
+           <subst lemma="did not" pos="VVD NN" freq="1" />
+           <subst lemma="do" pos="VVD" freq="1" />
+@@ -154933,7 +154933,7 @@
+     <tokens>
+       <token id="XXX" wordform="“" lemma="“" posMASC="XXX" posTT="``" />
+       <token id="XXX" wordform="I" lemma="I" posMASC="XXX" posTT="PP" />
+-      <token id="10449" wordform="didn" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
++      <token id="10449" wordform="did" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
+         <substitutions>
+           <subst lemma="could" pos="MD" freq="2" />
+           <subst lemma="did not" pos="VVD NN" freq="2" />
+@@ -158538,7 +158538,7 @@
+     <tokens>
+       <token id="XXX" wordform="“" lemma="“" posMASC="XXX" posTT="``" />
+       <token id="XXX" wordform="I" lemma="I" posMASC="XXX" posTT="PP" />
+-      <token id="10667" wordform="don" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
++      <token id="10667" wordform="do" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
+         <substitutions>
+           <subst lemma="ca" pos="MD" freq="1" />
+           <subst lemma="do not" pos="VVP NN" freq="2" />
+@@ -165299,7 +165299,7 @@
+           <subst lemma="platelet" pos="NNS" freq="1" />
+         </substitutions>
+       </token>
+-      <token id="11129" wordform="isn" lemma="be" posMASC="NN" posTT="VBZ" problematic="no" >
++      <token id="11129" wordform="is" lemma="be" posMASC="NN" posTT="VBZ" problematic="no" >
+         <substitutions>
+           <subst lemma="ai" pos="VVZ" freq="1" />
+           <subst lemma="is not" pos="VBZ NN" freq="2" />
+@@ -169807,7 +169807,7 @@
+     </postcontext>
+     <tokens>
+       <token id="XXX" wordform="We" lemma="we" posMASC="XXX" posTT="PP" />
+-      <token id="11447" wordform="aren" lemma="be" posMASC="NN" posTT="VBP" problematic="no" >
++      <token id="11447" wordform="are" lemma="be" posMASC="NN" posTT="VBP" problematic="no" >
+         <substitutions>
+           <subst lemma="be" pos="VBD" freq="1" />
+           <subst lemma="be not" pos="VBP JJ" freq="1" />
+@@ -174396,7 +174396,7 @@
+     </postcontext>
+     <tokens>
+       <token id="XXX" wordform="He" lemma="he" posMASC="XXX" posTT="PP" />
+-      <token id="11773" wordform="didn" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
++      <token id="11773" wordform="did" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
+         <substitutions>
+           <subst lemma="barely" pos="VVD" freq="1" />
+           <subst lemma="did not" pos="VVD JJ" freq="1" />
+@@ -184237,7 +184237,7 @@
+       <token id="XXX" wordform="," lemma="," posMASC="XXX" posTT="," />
+       <token id="XXX" wordform="so" lemma="so" posMASC="XXX" posTT="RB" />
+       <token id="XXX" wordform="I" lemma="I" posMASC="XXX" posTT="PP" />
+-      <token id="12446" wordform="couldn" lemma="could" posMASC="NN" posTT="MD" problematic="no" >
++      <token id="12446" wordform="could" lemma="could" posMASC="NN" posTT="MD" problematic="no" >
+         <substitutions>
+           <subst lemma="did not" pos="VVD NN" freq="1" />
+           <subst lemma="do" pos="VVD" freq="1" />
+@@ -185854,7 +185854,7 @@
+     </postcontext>
+     <tokens>
+       <token id="XXX" wordform="She" lemma="she" posMASC="XXX" posTT="PP" />
+-      <token id="12553" wordform="didn" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
++      <token id="12553" wordform="did" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
+         <substitutions>
+           <subst lemma="did not" pos="VVD NN" freq="2" />
+           <subst lemma="have" pos="VHD" freq="2" />
+@@ -185894,7 +185894,7 @@
+       <token id="XXX" wordform="," lemma="," posMASC="XXX" posTT="," />
+       <token id="XXX" wordform="and" lemma="and" posMASC="XXX" posTT="CC" />
+       <token id="XXX" wordform="I" lemma="I" posMASC="XXX" posTT="PP" />
+-      <token id="12557" wordform="didn" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
++      <token id="12557" wordform="did" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
+         <substitutions>
+           <subst lemma="could" pos="MD" freq="2" />
+           <subst lemma="did not" pos="VVD VVD" freq="2" />
+@@ -192798,7 +192798,7 @@
+       </token>
+       <token id="XXX" wordform="that" lemma="that" posMASC="XXX" posTT="IN/that" />
+       <token id="XXX" wordform="we" lemma="we" posMASC="XXX" posTT="PP" />
+-      <token id="13056" wordform="weren" lemma="be" posMASC="NN" posTT="VBD" problematic="no" >
++      <token id="13056" wordform="were" lemma="be" posMASC="NN" posTT="VBD" problematic="no" >
+         <substitutions>
+           <subst lemma="be" pos="VBP" freq="1" />
+         </substitutions>
+@@ -195576,7 +195576,7 @@
+     </postcontext>
+     <tokens>
+       <token id="XXX" wordform="Are" lemma="be" posMASC="XXX" posTT="VBP" />
+-      <token id="XXX" wordform="…look" lemma="&lt;unknown&gt;" posMASC="XXX" posTT="NNS" />
++      <token id="XXX" wordform="…" lemma="&lt;unknown&gt;" posMASC="XXX" posTT="NNS" />
+       <token id="13251" wordform="look" lemma="," posMASC="NN" posTT="," problematic="no" >
+         <substitutions>
+           <subst lemma="," pos="," freq="5" />
+@@ -199174,7 +199174,7 @@
+       <token id="XXX" wordform="," lemma="," posMASC="XXX" posTT="," />
+       <token id="XXX" wordform="there" lemma="there" posMASC="XXX" posTT="EX" />
+       <token id="XXX" wordform="is" lemma="be" posMASC="XXX" posTT="VBZ" />
+-      <token id="XXX" wordform="…separate" lemma="&lt;unknown&gt;" posMASC="XXX" posTT="NN" />
++      <token id="XXX" wordform="…" lemma="&lt;unknown&gt;" posMASC="XXX" posTT="NN" />
+       <token id="13494" wordform="separate" lemma="from" posMASC="JJ" posTT="IN" problematic="no" >
+         <substitutions>
+           <subst lemma="from" pos="IN" freq="10" />
+@@ -208738,7 +208738,7 @@
+     </postcontext>
+     <tokens>
+       <token id="XXX" wordform="It" lemma="it" posMASC="XXX" posTT="PP" />
+-      <token id="14203" wordform="won" lemma="wo" posMASC="VBD" posTT="MD" problematic="no" >
++      <token id="14203" wordform="wo" lemma="wo" posMASC="VBD" posTT="MD" problematic="no" >
+         <substitutions>
+           <subst lemma="ai" pos="VVP" freq="1" />
+         </substitutions>
+@@ -210614,7 +210614,7 @@
+     </postcontext>
+     <tokens>
+       <token id="XXX" wordform="I" lemma="I" posMASC="XXX" posTT="PP" />
+-      <token id="14328" wordform="didn" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
++      <token id="14328" wordform="did" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
+         <substitutions>
+           <subst lemma="could" pos="MD" freq="3" />
+           <subst lemma="did not" pos="VVD NN" freq="1" />
+@@ -210642,7 +210642,7 @@
+       <token id="XXX" wordform="," lemma="," posMASC="XXX" posTT="," />
+       <token id="XXX" wordform="and" lemma="and" posMASC="XXX" posTT="CC" />
+       <token id="XXX" wordform="it" lemma="it" posMASC="XXX" posTT="PP" />
+-      <token id="14330" wordform="wasn" lemma="be" posMASC="NN" posTT="VBD" problematic="no" >
++      <token id="14330" wordform="was" lemma="be" posMASC="NN" posTT="VBD" problematic="no" >
+         <substitutions>
+           <subst lemma="ai" pos="VVP" freq="1" />
+           <subst lemma="be" pos="VBZ" freq="1" />
+@@ -215288,7 +215288,7 @@
+     </postcontext>
+     <tokens>
+       <token id="XXX" wordform="I" lemma="I" posMASC="XXX" posTT="PP" />
+-      <token id="14666" wordform="don" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
++      <token id="14666" wordform="do" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
+         <substitutions>
+           <subst lemma="ca" pos="MD" freq="1" />
+           <subst lemma="do not" pos="VVP NN" freq="2" />
+@@ -216025,7 +216025,7 @@
+     </postcontext>
+     <tokens>
+       <token id="XXX" wordform="I" lemma="I" posMASC="XXX" posTT="PP" />
+-      <token id="14719" wordform="haven" lemma="have" posMASC="NN" posTT="VHP" problematic="no" >
++      <token id="14719" wordform="have" lemma="have" posMASC="NN" posTT="VHP" problematic="no" >
+         <substitutions>
+           <subst lemma="have not" pos="VHP NN" freq="2" />
+         </substitutions>
+@@ -217769,7 +217769,7 @@
+     </postcontext>
+     <tokens>
+       <token id="XXX" wordform="I" lemma="I" posMASC="XXX" posTT="PP" />
+-      <token id="14827" wordform="didn" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
++      <token id="14827" wordform="did" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
+         <substitutions>
+           <subst lemma="ca" pos="MD" freq="1" />
+           <subst lemma="could" pos="MD" freq="1" />
+@@ -218605,7 +218605,7 @@
+       </token>
+       <token id="XXX" wordform="," lemma="," posMASC="XXX" posTT="," />
+       <token id="XXX" wordform="we" lemma="we" posMASC="XXX" posTT="PP" />
+-      <token id="14882" wordform="don" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
++      <token id="14882" wordform="do" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
+         <substitutions>
+           <subst lemma="do not" pos="VVP NN" freq="2" />
+           <subst lemma="have" pos="VVD" freq="1" />
+@@ -218853,7 +218853,7 @@
+         </substitutions>
+       </token>
+       <token id="XXX" wordform="you" lemma="you" posMASC="XXX" posTT="PP" />
+-      <token id="14899" wordform="don" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
++      <token id="14899" wordform="do" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
+         <substitutions>
+           <subst lemma="ca" pos="MD" freq="1" />
+           <subst lemma="do not" pos="VVP NN" freq="1" />
+@@ -219151,7 +219151,7 @@
+       </token>
+       <token id="XXX" wordform="," lemma="," posMASC="XXX" posTT="," />
+       <token id="XXX" wordform="I" lemma="I" posMASC="XXX" posTT="PP" />
+-      <token id="14921" wordform="didn" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
++      <token id="14921" wordform="did" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
+         <substitutions>
+           <subst lemma="did not" pos="VVD NN" freq="1" />
+           <subst lemma="never" pos="VVD" freq="1" />
+@@ -219191,7 +219191,7 @@
+         </substitutions>
+       </token>
+       <token id="XXX" wordform="of" lemma="of" posMASC="XXX" posTT="IN" />
+-      <token id="XXX" wordform="…weirdness" lemma="&lt;unknown&gt;" posMASC="XXX" posTT="NN" />
++      <token id="XXX" wordform="…" lemma="&lt;unknown&gt;" posMASC="XXX" posTT="NN" />
+       <token id="14925" wordform="weirdness" lemma="." posMASC="NNS" posTT="SENT" problematic="no" >
+         <substitutions>
+           <subst lemma="." pos="SENT" freq="11" />
+@@ -219748,7 +219748,7 @@
+       </token>
+       <token id="XXX" wordform="," lemma="," posMASC="XXX" posTT="," />
+       <token id="XXX" wordform="but" lemma="but" posMASC="XXX" posTT="CC" />
+-      <token id="14960" wordform="don" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
++      <token id="14960" wordform="do" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
+         <substitutions>
+           <subst lemma="decline" pos="NN" freq="1" />
+           <subst lemma="do not" pos="VVP JJ" freq="1" />
+@@ -220010,7 +220010,7 @@
+       <token id="XXX" wordform="," lemma="," posMASC="XXX" posTT="," />
+       <token id="XXX" wordform="and" lemma="and" posMASC="XXX" posTT="CC" />
+       <token id="XXX" wordform="I" lemma="I" posMASC="XXX" posTT="PP" />
+-      <token id="14979" wordform="don" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
++      <token id="14979" wordform="do" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
+         <substitutions>
+           <subst lemma="do not" pos="VVP NN" freq="1" />
+           <subst lemma="would" pos="MD" freq="1" />
+@@ -220272,7 +220272,7 @@
+     <tokens>
+       <token id="XXX" wordform="“" lemma="“" posMASC="XXX" posTT="``" />
+       <token id="XXX" wordform="I" lemma="I" posMASC="XXX" posTT="PP" />
+-      <token id="14994" wordform="don" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
++      <token id="14994" wordform="do" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
+         <substitutions>
+           <subst lemma="do not" pos="VVP NN" freq="1" />
+         </substitutions>
+@@ -220365,7 +220365,7 @@
+     <tokens>
+       <token id="XXX" wordform="“" lemma="“" posMASC="XXX" posTT="``" />
+       <token id="XXX" wordform="He" lemma="he" posMASC="XXX" posTT="PP" />
+-      <token id="15001" wordform="wasn" lemma="be" posMASC="NN" posTT="VBD" problematic="no" >
++      <token id="15001" wordform="was" lemma="be" posMASC="NN" posTT="VBD" problematic="no" >
+         <substitutions>
+           <subst lemma="ai" pos="VVP" freq="1" />
+           <subst lemma="be" pos="VBZ" freq="1" />
+@@ -220440,7 +220440,7 @@
+         </substitutions>
+       </token>
+       <token id="XXX" wordform="," lemma="," posMASC="XXX" posTT="," />
+-      <token id="15006" wordform="didn" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
++      <token id="15006" wordform="did" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
+         <substitutions>
+           <subst lemma="did not" pos="VVD NN" freq="1" />
+           <subst lemma="have" pos="VHD" freq="2" />
+@@ -221067,7 +221067,7 @@
+       </token>
+       <token id="XXX" wordform="," lemma="," posMASC="XXX" posTT="," />
+       <token id="XXX" wordform="I" lemma="I" posMASC="XXX" posTT="PP" />
+-      <token id="15048" wordform="don" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
++      <token id="15048" wordform="do" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
+         <substitutions>
+           <subst lemma="did not" pos="VVD NN" freq="1" />
+           <subst lemma="do not" pos="VVP NN" freq="1" />
+@@ -221576,7 +221576,7 @@
+     <tokens>
+       <token id="XXX" wordform="“" lemma="“" posMASC="XXX" posTT="``" />
+       <token id="XXX" wordform="I" lemma="I" posMASC="XXX" posTT="PP" />
+-      <token id="15085" wordform="don" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
++      <token id="15085" wordform="do" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
+         <substitutions>
+           <subst lemma="ca" pos="MD" freq="1" />
+           <subst lemma="do not" pos="VVP NN" freq="1" />
+@@ -221821,7 +221821,7 @@
+     </postcontext>
+     <tokens>
+       <token id="XXX" wordform="I" lemma="I" posMASC="XXX" posTT="PP" />
+-      <token id="15112" wordform="don" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
++      <token id="15112" wordform="do" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
+         <substitutions>
+           <subst lemma="do not" pos="VVP NN" freq="2" />
+           <subst lemma="would" pos="MD" freq="1" />
+@@ -222128,7 +222128,7 @@
+     <tokens>
+       <token id="XXX" wordform="but" lemma="but" posMASC="XXX" posTT="CC" />
+       <token id="XXX" wordform="I" lemma="I" posMASC="XXX" posTT="PP" />
+-      <token id="15131" wordform="couldn" lemma="could" posMASC="NN" posTT="MD" problematic="no" >
++      <token id="15131" wordform="could" lemma="could" posMASC="NN" posTT="MD" problematic="no" >
+         <substitutions>
+           <subst lemma="did not" pos="VVD NN" freq="1" />
+           <subst lemma="do" pos="VVD" freq="1" />
+@@ -222788,7 +222788,7 @@
+       </token>
+       <token id="XXX" wordform="that" lemma="that" posMASC="XXX" posTT="IN/that" />
+       <token id="XXX" wordform="he" lemma="he" posMASC="XXX" posTT="PP" />
+-      <token id="15173" wordform="won" lemma="wo" posMASC="VBD" posTT="MD" problematic="no" >
++      <token id="15173" wordform="wo" lemma="wo" posMASC="VBD" posTT="MD" problematic="no" >
+         <substitutions>
+           <subst lemma="do" pos="VVP" freq="1" />
+           <subst lemma="would" pos="MD" freq="1" />
+@@ -223281,7 +223281,7 @@
+         </substitutions>
+       </token>
+       <token id="XXX" wordform="," lemma="," posMASC="XXX" posTT="," />
+-      <token id="15207" wordform="don" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
++      <token id="15207" wordform="do" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
+         <substitutions>
+           <subst lemma="ca" pos="MD" freq="1" />
+           <subst lemma="do not" pos="VVP NN" freq="2" />
+@@ -223333,7 +223333,7 @@
+       </token>
+       <token id="XXX" wordform="," lemma="," posMASC="XXX" posTT="," />
+       <token id="XXX" wordform="you" lemma="you" posMASC="XXX" posTT="PP" />
+-      <token id="15210" wordform="won" lemma="wo" posMASC="VBD" posTT="MD" problematic="no" >
++      <token id="15210" wordform="wo" lemma="wo" posMASC="VBD" posTT="MD" problematic="no" >
+         <substitutions>
+           <subst lemma="be n&apos;t go to" pos="VBP RB VVG NN" freq="1" />
+           <subst lemma="ca" pos="MD" freq="1" />
+@@ -223437,7 +223437,7 @@
+       <token id="XXX" wordform="," lemma="," posMASC="XXX" posTT="," />
+       <token id="XXX" wordform="so" lemma="so" posMASC="XXX" posTT="RB" />
+       <token id="XXX" wordform="I" lemma="I" posMASC="XXX" posTT="PP" />
+-      <token id="15217" wordform="couldn" lemma="could" posMASC="NN" posTT="MD" problematic="no" >
++      <token id="15217" wordform="could" lemma="could" posMASC="NN" posTT="MD" problematic="no" >
+         <substitutions>
+           <subst lemma="did not" pos="VVD NN" freq="1" />
+           <subst lemma="do" pos="VVD" freq="2" />
+@@ -224883,7 +224883,7 @@
+     </postcontext>
+     <tokens>
+       <token id="XXX" wordform="We" lemma="we" posMASC="XXX" posTT="PP" />
+-      <token id="15316" wordform="don" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
++      <token id="15316" wordform="do" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
+         <substitutions>
+           <subst lemma="do not" pos="VVP NN" freq="1" />
+           <subst lemma="wo" pos="MD" freq="1" />
+@@ -225210,7 +225210,7 @@
+     </postcontext>
+     <tokens>
+       <token id="XXX" wordform="I" lemma="I" posMASC="XXX" posTT="PP" />
+-      <token id="15339" wordform="couldn" lemma="could" posMASC="NN" posTT="MD" problematic="no" >
++      <token id="15339" wordform="could" lemma="could" posMASC="NN" posTT="MD" problematic="no" >
+         <substitutions>
+           <subst lemma="do" pos="VVD" freq="1" />
+         </substitutions>
+@@ -225552,7 +225552,7 @@
+       <token id="XXX" wordform="," lemma="," posMASC="XXX" posTT="," />
+       <token id="XXX" wordform="but" lemma="but" posMASC="XXX" posTT="CC" />
+       <token id="XXX" wordform="we" lemma="we" posMASC="XXX" posTT="PP" />
+-      <token id="15361" wordform="don" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
++      <token id="15361" wordform="do" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
+         <substitutions>
+           <subst lemma="ca" pos="MD" freq="1" />
+           <subst lemma="do not" pos="VVP NN" freq="3" />
+@@ -227943,7 +227943,7 @@
+           <subst lemma="person" pos="NNS" freq="1" />
+         </substitutions>
+       </token>
+-      <token id="15515" wordform="don" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
++      <token id="15515" wordform="do" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
+         <substitutions>
+           <subst lemma="do not" pos="VVP NN" freq="1" />
+           <subst lemma="never" pos="VVD" freq="1" />
+@@ -228461,7 +228461,7 @@
+           <subst lemma="nitwit" pos="NN" freq="1" />
+         </substitutions>
+       </token>
+-      <token id="15551" wordform="hadn" lemma="have" posMASC="NN" posTT="VHD" problematic="no" >
++      <token id="15551" wordform="had" lemma="have" posMASC="NN" posTT="VHD" problematic="no" >
+         <substitutions>
+           <subst lemma="do" pos="VVD" freq="2" />
+           <subst lemma="had not" pos="VHD NN" freq="2" />
+@@ -228718,7 +228718,7 @@
+         </substitutions>
+       </token>
+       <token id="XXX" wordform="I" lemma="I" posMASC="XXX" posTT="PP" />
+-      <token id="15566" wordform="wouldn" lemma="would" posMASC="NN" posTT="MD" problematic="no" >
++      <token id="15566" wordform="would" lemma="would" posMASC="NN" posTT="MD" problematic="no" >
+         <substitutions>
+           <subst lemma="do" pos="VVD" freq="1" />
+         </substitutions>
+@@ -228911,7 +228911,7 @@
+       </token>
+       <token id="XXX" wordform="that" lemma="that" posMASC="XXX" posTT="IN/that" />
+       <token id="XXX" wordform="he" lemma="he" posMASC="XXX" posTT="PP" />
+-      <token id="15581" wordform="won" lemma="wo" posMASC="VBD" posTT="MD" problematic="no" >
++      <token id="15581" wordform="wo" lemma="wo" posMASC="VBD" posTT="MD" problematic="no" >
+         <substitutions>
+           <subst lemma="do" pos="VVZ" freq="1" />
+           <subst lemma="do n&apos;t" pos="VVD RB" freq="1" />
+@@ -229033,7 +229033,7 @@
+       <token id="XXX" wordform="on" lemma="on" posMASC="XXX" posTT="IN" />
+       <token id="XXX" wordform="," lemma="," posMASC="XXX" posTT="," />
+       <token id="XXX" wordform="I" lemma="I" posMASC="XXX" posTT="PP" />
+-      <token id="15590" wordform="don" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
++      <token id="15590" wordform="do" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
+         <substitutions>
+           <subst lemma="do not" pos="VVP NN" freq="1" />
+           <subst lemma="wo" pos="MD" freq="1" />
+@@ -229914,7 +229914,7 @@
+         </substitutions>
+       </token>
+       <token id="XXX" wordform="is" lemma="be" posMASC="XXX" posTT="VBZ" />
+-      <token id="XXX" wordform="…surprising" lemma="&lt;unknown&gt;" posMASC="XXX" posTT="VVG" />
++      <token id="XXX" wordform="…" lemma="&lt;unknown&gt;" posMASC="XXX" posTT="VVG" />
+       <token id="15647" wordform="surprising" lemma="," posMASC="JJ" posTT="," problematic="no" >
+         <substitutions>
+           <subst lemma="," pos="," freq="6" />
+@@ -230657,7 +230657,7 @@
+         </substitutions>
+       </token>
+       <token id="XXX" wordform="is" lemma="be" posMASC="XXX" posTT="VBZ" />
+-      <token id="XXX" wordform="…surprising" lemma="&lt;unknown&gt;" posMASC="XXX" posTT="VVG" />
++      <token id="XXX" wordform="…" lemma="&lt;unknown&gt;" posMASC="XXX" posTT="VVG" />
+       <token id="15699" wordform="surprising" lemma="," posMASC="JJ" posTT="," problematic="no" >
+         <substitutions>
+           <subst lemma="," pos="," freq="10" />
+@@ -230963,7 +230963,7 @@
+       </token>
+       <token id="XXX" wordform="," lemma="," posMASC="XXX" posTT="," />
+       <token id="XXX" wordform="I" lemma="I" posMASC="XXX" posTT="PP" />
+-      <token id="15721" wordform="don" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
++      <token id="15721" wordform="do" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
+         <substitutions>
+           <subst lemma="do not" pos="VVP NN" freq="2" />
+           <subst lemma="rarely" pos="VVD" freq="1" />
+@@ -232473,7 +232473,7 @@
+     </postcontext>
+     <tokens>
+       <token id="XXX" wordform="It" lemma="it" posMASC="XXX" posTT="PP" />
+-      <token id="15820" wordform="won" lemma="wo" posMASC="VBD" posTT="MD" problematic="no" >
++      <token id="15820" wordform="wo" lemma="wo" posMASC="VBD" posTT="MD" problematic="no" >
+         <substitutions>
+           <subst lemma="do" pos="VVZ" freq="1" />
+         </substitutions>
+@@ -232539,7 +232539,7 @@
+       </token>
+       <token id="XXX" wordform="," lemma="," posMASC="XXX" posTT="," />
+       <token id="XXX" wordform="you" lemma="you" posMASC="XXX" posTT="PP" />
+-      <token id="15825" wordform="won" lemma="wo" posMASC="VBD" posTT="MD" problematic="no" >
++      <token id="15825" wordform="wo" lemma="wo" posMASC="VBD" posTT="MD" problematic="no" >
+         <substitutions>
+           <subst lemma="do" pos="VVP" freq="3" />
+         </substitutions>
+@@ -234214,7 +234214,7 @@
+     </postcontext>
+     <tokens>
+       <token id="XXX" wordform="She" lemma="she" posMASC="XXX" posTT="PP" />
+-      <token id="15933" wordform="didn" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
++      <token id="15933" wordform="did" lemma="do" posMASC="NN" posTT="VVD" problematic="no" >
+         <substitutions>
+           <subst lemma="did not" pos="VVD JJ" freq="1" />
+           <subst lemma="have" pos="VHD" freq="1" />
+@@ -234481,7 +234481,7 @@
+       </token>
+       <token id="XXX" wordform="," lemma="," posMASC="XXX" posTT="," />
+       <token id="XXX" wordform="I" lemma="I" posMASC="XXX" posTT="PP" />
+-      <token id="15953" wordform="don" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
++      <token id="15953" wordform="do" lemma="do" posMASC="VB" posTT="VVP" problematic="no" >
+         <substitutions>
+           <subst lemma="do not" pos="VVP NN" freq="1" />
+           <subst lemma="wo" pos="MD" freq="1" />
