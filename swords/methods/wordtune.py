@@ -32,8 +32,11 @@ class _Wordtune(LexSubGenerator):
     super().__init__(*args, **kwargs)
     if endpoint not in ['clues', 'refine']:
       raise ValueError('Unknown endpoint')
-    with open(ASSETS['methods_wordtune_headers']['fp'], 'r') as f:
-      self.__headers = json.load(f)
+    try:
+      with open(ASSETS['methods_wordtune_headers']['fp'], 'r') as f:
+        self.__headers = json.load(f)
+    except:
+        self.__headers = None
     self.endpoint = endpoint
     self.timeout = timeout
     self.tid_to_cached_output = tid_to_cached_output
