@@ -1,0 +1,7 @@
+swords.egg-info/
+scripts/
+notebooks/
+__pycache__
+*.pyc
+ref/
+venv/
