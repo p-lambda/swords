@@ -1,0 +1,36 @@
+{
+  "methods_wordtune_headers": {
+    "fp_rel": "raw/methods/wordtune/wordtune_headers.json",
+    "private": true
+  },
+  "methods_wordtune_semeval07_test": {
+    "fp_rel": "raw/methods/wordtune/semeval07_test_wordtuneclues.out.json.gz",
+    "url": "https://nlp.stanford.edu/data/swords/assets/public/raw/methods/wordtune/semeval07_test_wordtuneclues.out.json.gz",
+    "checksum": "31a92ec8ec5e9db5f81747665299b79f040734bfb2b1f8a7d377f4e8fc49134e"
+  },
+  "methods_wordtune_swords-v0.8_dev-valid": {
+    "fp_rel": "raw/methods/wordtune/swords-v0.8_dev-valid_wordtuneclues.out.json.gz",
+    "url": "https://nlp.stanford.edu/data/swords/assets/public/raw/methods/wordtune/swords-v0.8_dev-valid_wordtuneclues.out.json.gz",
+    "checksum": "4b99584bf7ceb5dbb8a911499935961f011cbb119f87585f2546d35470a16eac"
+  },
+  "methods_wordtune_swords-v0.8_test": {
+    "fp_rel": "raw/methods/wordtune/swords-v0.8_test_wordtuneclues.out.json.gz",
+    "url": "https://nlp.stanford.edu/data/swords/assets/public/raw/methods/wordtune/swords-v0.8_test_wordtuneclues.out.json.gz",
+    "checksum": "f4c16bcd8940ede6355a8d02f9f6d03329da1fbf88a55c30409d0c1f862b7af0"
+  },
+  "methods_wordtune_coinco_test": {
+    "fp_rel": "raw/methods/wordtune/coinco_test_wordtuneclues.out.json.gz",
+    "url": "https://nlp.stanford.edu/data/swords/assets/public/raw/methods/wordtune/coinco_test_wordtuneclues.out.json.gz",
+    "checksum": "052fd6ae6d6d6fcb45a8616fb7c7ea2b1c4719968cf38951b8d00d9b3c6b40c1"
+  },
+  "methods_gpt3_swords-v0.8_test": {
+    "fp_rel": "raw/methods/gpt3/swords-v0.8_test_gpt3.out.json.gz",
+    "url": "https://nlp.stanford.edu/data/swords/assets/public/raw/methods/gpt3/swords-v0.8_test_gpt3.out.json.gz",
+    "checksum": "d71170411b13cf2d57847ba224749673f571c0a8e7119856e9ea993ee149f502"
+  },
+  "methods_gpt3_swords-v0.8_dev-valid": {
+    "fp_rel": "raw/methods/gpt3/swords-v0.8_dev-valid_gpt3.out.json.gz",
+    "url": "https://nlp.stanford.edu/data/swords/assets/public/raw/methods/gpt3/swords-v0.8_dev-valid_gpt3.out.json.gz",
+    "checksum": "466f9c21fc103fd10d2845b1e281d93a828e25f78cf99666f4c08190b15da92a"
+  }
+}

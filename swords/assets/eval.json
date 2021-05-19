@@ -1,0 +1,7 @@
+{
+  "eval_gap_script": {
+    "fp_rel": "raw/eval/generalized_average_precision.py",
+    "url": "https://raw.githubusercontent.com/orenmel/lexsub/4197fccf489670fdc4e5510971f4288b9d0b1625/jcs/evaluation/measures/generalized_average_precision.py",
+    "checksum": "dd30ae8844ccfd9977aa554f50420d2b14d27d932d28c1015417fab907712ae7"
+  }
+}

@@ -1,4 +1,4 @@
-docker exec -it swords \
+./docker_cmd.sh \
 	python -m swords.cli assets semeval07
-docker exec -it swords \
+./docker_cmd.sh \
 	python -m swords.cli parse semeval07

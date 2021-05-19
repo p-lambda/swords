@@ -44,6 +44,9 @@ RUN chmod -R 755 $NLTK_CACHE
 RUN apt-get -y install default-libmysqlclient-dev
 RUN pip install --no-cache-dir pattern==3.6.0
 
+# Install lightweight deps
+RUN pip install --no-cache-dir intervaltree==3.1.0
+
 # Install Jupyter
 RUN pip install --no-cache-dir jupyter==1.0.0
 RUN pip install --no-cache-dir matplotlib==3.3.2

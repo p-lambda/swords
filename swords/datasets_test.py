@@ -153,32 +153,32 @@ class TestDatasets(unittest.TestCase):
     self.assertEqual(s1r0, """“Don’t name her ‘What did you say?’, okay? ‘What did you say?’, The next thing that comes out of your mouth is probably what she’ll respond to until we figure out how to put her back.”""")
     self.assertEqual(s1r1, """I opened my mouth to ask for an explanation, but Nepthys stopped me. “Don’t name her ‘What did you say?’, okay? The next thing that comes out of your mouth is probably what she’ll respond to until we figure out how to put her back.”""")
 
-  def test_sword(self):
-    sword_dev = get_dataset('sword-v0.6_dev', ignore_cache=True)
-    self.assertEqual(sword_dev.stats(include_uninformative_labels=True), (417, 417, 24095, 72285))
-    num_outliers = sum([int(len(sword_dev.get_substitute_labels(sid)) != 3) for sid in sword_dev.all_substitute_ids()])
+  def test_swords(self):
+    swords_dev = get_dataset('swords-v0.6_dev', ignore_cache=True)
+    self.assertEqual(swords_dev.stats(include_uninformative_labels=True), (417, 417, 24095, 72285))
+    num_outliers = sum([int(len(swords_dev.get_substitute_labels(sid)) != 3) for sid in swords_dev.all_substitute_ids()])
     self.assertEqual(num_outliers, 0)
 
-    sword_test = get_dataset('sword-v0.6_test', ignore_cache=True)
-    self.assertEqual(sword_test.stats(include_uninformative_labels=True), (833, 833, 47701, 143103))
-    num_outliers = sum([int(len(sword_test.get_substitute_labels(sid)) != 3) for sid in sword_test.all_substitute_ids()])
+    swords_test = get_dataset('swords-v0.6_test', ignore_cache=True)
+    self.assertEqual(swords_test.stats(include_uninformative_labels=True), (833, 833, 47701, 143103))
+    num_outliers = sum([int(len(swords_test.get_substitute_labels(sid)) != 3) for sid in swords_test.all_substitute_ids()])
     self.assertEqual(num_outliers, 0)
 
-    sword_test = get_dataset('sword-v0.5_test', ignore_cache=True)
-    self.assertEqual(sword_test.stats(include_uninformative_labels=True), (833, 833, 47718, 145344))
-    num_over = sum([int(len(sword_test.get_substitute_labels(sid)) > 3) for sid in sword_test.all_substitute_ids()])
-    num_under = sum([int(len(sword_test.get_substitute_labels(sid)) < 3) for sid in sword_test.all_substitute_ids()])
+    swords_test = get_dataset('swords-v0.5_test', ignore_cache=True)
+    self.assertEqual(swords_test.stats(include_uninformative_labels=True), (833, 833, 47718, 145344))
+    num_over = sum([int(len(swords_test.get_substitute_labels(sid)) > 3) for sid in swords_test.all_substitute_ids()])
+    num_under = sum([int(len(swords_test.get_substitute_labels(sid)) < 3) for sid in swords_test.all_substitute_ids()])
     self.assertEqual(num_over, 2164)
     self.assertEqual(num_under, 17)
 
-    sword_dev = get_dataset('sword-v0.5_dev', ignore_cache=True)
-    self.assertEqual(sword_dev.stats(include_uninformative_labels=True), (417, 417, 24095, 72648))
-    num_outliers = sum([int(len(sword_dev.get_substitute_labels(sid)) != 3) for sid in sword_dev.all_substitute_ids()])
+    swords_dev = get_dataset('swords-v0.5_dev', ignore_cache=True)
+    self.assertEqual(swords_dev.stats(include_uninformative_labels=True), (417, 417, 24095, 72648))
+    num_outliers = sum([int(len(swords_dev.get_substitute_labels(sid)) != 3) for sid in swords_dev.all_substitute_ids()])
     self.assertEqual(num_outliers, 363)
 
-    sword_test = get_dataset('sword-v0.4_test', ignore_cache=True)
-    self.assertEqual(sword_test.stats(include_uninformative_labels=True), (832, 832, 47652, 142955))
-    num_outliers = sum([int(len(sword_test.get_substitute_labels(sid)) != 3) for sid in sword_test.all_substitute_ids()])
+    swords_test = get_dataset('swords-v0.4_test', ignore_cache=True)
+    self.assertEqual(swords_test.stats(include_uninformative_labels=True), (832, 832, 47652, 142955))
+    num_outliers = sum([int(len(swords_test.get_substitute_labels(sid)) != 3) for sid in swords_test.all_substitute_ids()])
     self.assertEqual(num_outliers, 13)
 
 if __name__ == '__main__':

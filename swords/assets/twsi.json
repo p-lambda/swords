@@ -1,0 +1,8 @@
+{
+  "twsi_v2": {
+    "fp_rel": "raw/data/twsi/TWSI2_complete.zip",
+    "url": "http://web.archive.org/web/20120303170932/http://www.ukp.tu-darmstadt.de/fileadmin/user_upload/Group_UKP/data/TWSI/TWSI2_complete.zip",
+    "checksum": "cf53bada15571b970a3e617b224f7f8438435c17c8e67822deb5615fd89a5d2a",
+    "note": "http://web.archive.org/web/20120205164921/http://www.ukp.tu-darmstadt.de/data/twsi-lexical-substitutions/"
+  }
+}

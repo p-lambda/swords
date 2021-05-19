@@ -1,0 +1,10 @@
+{
+  "test_semeval07_test_ait": {
+    "fp_rel": "test/semeval07_test_d449e14c.json.gz",
+    "checksum": "2ab2105b55507614fbb9132769c8ab9a28409e5b1f32001efe06df870ac513ab"
+  },
+  "test_coinco_test_ait": {
+    "fp_rel": "test/coinco-lemmatized_test_18a09fba.json.gz",
+    "checksum": "5ed9ef6dd84f7cdfaec268e8c3ec2820412c30a4993e70fadc4ca05c8b827c25"
+  }
+}

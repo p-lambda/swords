@@ -669,7 +669,7 @@ def coinco(
   return d
 
 
-def sword(
+def swords(
     split='test',
     amt_csv_assets=[],
     deny_list_assets=[],
@@ -895,381 +895,381 @@ DATASETS = {
     'create': lambda: coinco(split='test'),
     'id': 'd:55717224b4846b9e6b1eda575a0e9debce14df26'
   },
-  'sword-v0.1_test': {
-    'create': lambda: sword(
+  'swords-v0.1_test': {
+    'create': lambda: swords(
       split='test',
       amt_csv_assets=[
-        ('sword_test_1113', 'test/1109_0_300_results.csv')
+        ('swords_test_1113', 'test/1109_0_300_results.csv')
       ],
       skip_control=False),
     'id': 'd:17e5b3709108e7ca1f41e003641a9a982f5fad57'
   },
-  'sword-v0.2_test': {
-    'create': lambda: sword(
+  'swords-v0.2_test': {
+    'create': lambda: swords(
       split='test',
       amt_csv_assets=[
-        ('sword_test_1113', 'test/1109_0_300_results.csv'),
-        ('sword_test_1113', 'test/1109-2_300_600_results.csv'),
+        ('swords_test_1113', 'test/1109_0_300_results.csv'),
+        ('swords_test_1113', 'test/1109-2_300_600_results.csv'),
       ],
       skip_control=False),
     'id': 'd:67a501316db1057d708e4e9b70aa97c6a32288cd'
   },
-  'sword-v0.3_test': {
-    'create': lambda: sword(
+  'swords-v0.3_test': {
+    'create': lambda: swords(
       split='test',
       amt_csv_assets=[
-        ('sword_test_1113', 'test/1109_0_300_results.csv'),
-        ('sword_test_1113', 'test/1109-2_300_600_results.csv'),
-        ('sword_test_1113', 'test/1109-2_600_-1_results.csv'),
+        ('swords_test_1113', 'test/1109_0_300_results.csv'),
+        ('swords_test_1113', 'test/1109-2_300_600_results.csv'),
+        ('swords_test_1113', 'test/1109-2_600_-1_results.csv'),
       ],
       skip_control=False),
     'id': 'd:fced620015f4e426c117743d5e659961ff30f322'
   },
-  'sword-v0.4_test': {
-    'create': lambda: sword(
+  'swords-v0.4_test': {
+    'create': lambda: swords(
       split='test',
       amt_csv_assets=[
-        ('sword_test_1113', 'test/1109_0_300_results.csv'),
-        ('sword_test_1113', 'test/1109-2_300_600_results.csv'),
-        ('sword_test_1113', 'test/1109-2_600_-1_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect-a1_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect-a2_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect-a3_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect-a1_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect-a2_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect-a3_results.csv'),
+        ('swords_test_1113', 'test/1109_0_300_results.csv'),
+        ('swords_test_1113', 'test/1109-2_300_600_results.csv'),
+        ('swords_test_1113', 'test/1109-2_600_-1_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect-a1_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect-a2_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect-a3_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect-a1_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect-a2_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect-a3_results.csv'),
       ],
       deny_list_assets=[
-        ('sword_test_1113', 'test/1109_0_300_filter.txt'),
-        ('sword_test_1113', 'test/1109-2_300_600_filter.txt'),
-        ('sword_test_1113', 'test/1109-2_600_-1_filter.txt'),
-        ('sword_test_1113', 'test/1109_recollect-a1_filter.txt'),
-        ('sword_test_1113', 'test/1109_recollect-a2_filter.txt'),
-        ('sword_test_1113', 'test/1109_recollect-a3_filter.txt'),
+        ('swords_test_1113', 'test/1109_0_300_filter.txt'),
+        ('swords_test_1113', 'test/1109-2_300_600_filter.txt'),
+        ('swords_test_1113', 'test/1109-2_600_-1_filter.txt'),
+        ('swords_test_1113', 'test/1109_recollect-a1_filter.txt'),
+        ('swords_test_1113', 'test/1109_recollect-a2_filter.txt'),
+        ('swords_test_1113', 'test/1109_recollect-a3_filter.txt'),
       ]),
     'id': 'd:81b1e9ee6522e861f225ead134ed2f4e3081caa3'
   },
-  'sword-v0.5_dev': {
-    'create': lambda: sword(
+  'swords-v0.5_dev': {
+    'create': lambda: swords(
       split='dev',
       amt_csv_assets=[
-        ('sword_dev_1113', 'dev/1112_0_-1_results.csv'),
-        ('sword_dev_1113', 'dev/1112_recollect-a1_results.csv'),
-        ('sword_dev_1113', 'dev/1112_recollect-a2_results.csv'),
-        ('sword_dev_1113', 'dev/1112_recollect_recollect-a1_results.csv'),
+        ('swords_dev_1113', 'dev/1112_0_-1_results.csv'),
+        ('swords_dev_1113', 'dev/1112_recollect-a1_results.csv'),
+        ('swords_dev_1113', 'dev/1112_recollect-a2_results.csv'),
+        ('swords_dev_1113', 'dev/1112_recollect_recollect-a1_results.csv'),
       ],
       deny_list_assets=[
-        ('sword_dev_1113', 'dev/1112_filter.txt'),
-        ('sword_dev_1113', 'dev/1112_recollect_filter.txt'),
+        ('swords_dev_1113', 'dev/1112_filter.txt'),
+        ('swords_dev_1113', 'dev/1112_recollect_filter.txt'),
       ]),
     'id': 'd:ea1d4323620fa05fe8b3c0c3b6db36383eaf70f2'
   },
-  'sword-v0.5_test': {
-    'create': lambda: sword(
+  'swords-v0.5_test': {
+    'create': lambda: swords(
       split='test',
       amt_csv_assets=[
-        ('sword_test_1113', 'test/1109_0_300_results.csv'),
-        ('sword_test_1113', 'test/1109-2_300_600_results.csv'),
-        ('sword_test_1113', 'test/1109-2_600_-1_results.csv'),
-        ('sword_test_1113', 'test/1109_collect_missing_hits_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect-a1_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect-a2_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect-a3_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect-a1_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect-a2_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect-a3_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_recollect-a1_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_recollect-a2_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_recollect_recollect-a1_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_recollect_recollect_recollect-a1_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_recollect_recollect_recollect-a2_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_recollect_recollect_recollect_recollect-a1_results.csv'),
+        ('swords_test_1113', 'test/1109_0_300_results.csv'),
+        ('swords_test_1113', 'test/1109-2_300_600_results.csv'),
+        ('swords_test_1113', 'test/1109-2_600_-1_results.csv'),
+        ('swords_test_1113', 'test/1109_collect_missing_hits_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect-a1_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect-a2_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect-a3_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect-a1_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect-a2_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect-a3_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_recollect-a1_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_recollect-a2_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_recollect_recollect-a1_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_recollect_recollect_recollect-a1_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_recollect_recollect_recollect-a2_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_recollect_recollect_recollect_recollect-a1_results.csv'),
       ],
       deny_list_assets=[
-        ('sword_test_1113', 'test/1109_0_300_filter.txt'),
-        ('sword_test_1113', 'test/1109-2_300_600_filter.txt'),
-        ('sword_test_1113', 'test/1109-2_600_-1_filter.txt'),
-        ('sword_test_1113', 'test/1109_recollect-a1_filter.txt'),
-        ('sword_test_1113', 'test/1109_recollect-a2_filter.txt'),
-        ('sword_test_1113', 'test/1109_recollect-a3_filter.txt'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_filter.txt'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_recollect_filter.txt'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_recollect_recollect_recollect_filter.txt'),
+        ('swords_test_1113', 'test/1109_0_300_filter.txt'),
+        ('swords_test_1113', 'test/1109-2_300_600_filter.txt'),
+        ('swords_test_1113', 'test/1109-2_600_-1_filter.txt'),
+        ('swords_test_1113', 'test/1109_recollect-a1_filter.txt'),
+        ('swords_test_1113', 'test/1109_recollect-a2_filter.txt'),
+        ('swords_test_1113', 'test/1109_recollect-a3_filter.txt'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_filter.txt'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_recollect_filter.txt'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_recollect_recollect_recollect_filter.txt'),
       ]),
     'id': 'd:2e82153f79a298636639cc9c9a9047b3c35b6bac'
   },
-  'sword-v0.6_dev': {
-    'create': lambda: sword(
+  'swords-v0.6_dev': {
+    'create': lambda: swords(
       split='dev',
       amt_csv_assets=[
-        ('sword_dev_1113', 'dev/1112_0_-1_results.csv'),
-        ('sword_dev_1113', 'dev/1112_recollect-a1_results.csv'),
-        ('sword_dev_1113', 'dev/1112_recollect-a2_results.csv'),
-        ('sword_dev_1113', 'dev/1112_recollect_recollect-a1_results.csv'),
+        ('swords_dev_1113', 'dev/1112_0_-1_results.csv'),
+        ('swords_dev_1113', 'dev/1112_recollect-a1_results.csv'),
+        ('swords_dev_1113', 'dev/1112_recollect-a2_results.csv'),
+        ('swords_dev_1113', 'dev/1112_recollect_recollect-a1_results.csv'),
       ],
       deny_list_assets=[
-        ('sword_dev_1113', 'dev/1112_filter.txt'),
-        ('sword_dev_1113', 'dev/1112_recollect_filter.txt'),
+        ('swords_dev_1113', 'dev/1112_filter.txt'),
+        ('swords_dev_1113', 'dev/1112_recollect_filter.txt'),
       ],
       strict_num_labels=3),
     'id': 'd:3092286787cb832536b3adfcbe72b5282ae4fdc2'
   },
-  'sword-v0.6_test': {
-    'create': lambda: sword(
+  'swords-v0.6_test': {
+    'create': lambda: swords(
       split='test',
       amt_csv_assets=[
-        ('sword_test_1113', 'test/1109_0_300_results.csv'),
-        ('sword_test_1113', 'test/1109-2_300_600_results.csv'),
-        ('sword_test_1113', 'test/1109-2_600_-1_results.csv'),
-        ('sword_test_1113', 'test/1109_collect_missing_hits_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect-a1_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect-a2_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect-a3_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect-a1_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect-a2_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect-a3_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_recollect-a1_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_recollect-a2_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_recollect_recollect-a1_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_recollect_recollect_recollect-a1_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_recollect_recollect_recollect-a2_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_recollect_recollect_recollect_recollect-a1_results.csv'),
+        ('swords_test_1113', 'test/1109_0_300_results.csv'),
+        ('swords_test_1113', 'test/1109-2_300_600_results.csv'),
+        ('swords_test_1113', 'test/1109-2_600_-1_results.csv'),
+        ('swords_test_1113', 'test/1109_collect_missing_hits_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect-a1_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect-a2_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect-a3_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect-a1_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect-a2_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect-a3_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_recollect-a1_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_recollect-a2_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_recollect_recollect-a1_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_recollect_recollect_recollect-a1_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_recollect_recollect_recollect-a2_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_recollect_recollect_recollect_recollect-a1_results.csv'),
       ],
       deny_list_assets=[
-        ('sword_test_1113', 'test/1109_0_300_filter.txt'),
-        ('sword_test_1113', 'test/1109-2_300_600_filter.txt'),
-        ('sword_test_1113', 'test/1109-2_600_-1_filter.txt'),
-        ('sword_test_1113', 'test/1109_recollect-a1_filter.txt'),
-        ('sword_test_1113', 'test/1109_recollect-a2_filter.txt'),
-        ('sword_test_1113', 'test/1109_recollect-a3_filter.txt'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_filter.txt'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_recollect_filter.txt'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_recollect_recollect_recollect_filter.txt'),
+        ('swords_test_1113', 'test/1109_0_300_filter.txt'),
+        ('swords_test_1113', 'test/1109-2_300_600_filter.txt'),
+        ('swords_test_1113', 'test/1109-2_600_-1_filter.txt'),
+        ('swords_test_1113', 'test/1109_recollect-a1_filter.txt'),
+        ('swords_test_1113', 'test/1109_recollect-a2_filter.txt'),
+        ('swords_test_1113', 'test/1109_recollect-a3_filter.txt'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_filter.txt'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_recollect_filter.txt'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_recollect_recollect_recollect_filter.txt'),
       ],
       strict_num_labels=3),
     'id': 'd:d5a10261c4208e515972b2f94056636cb04846c2'
   },
-  'sword-v0.7_dev': {
-    'create': lambda: sword(
+  'swords-v0.7_dev': {
+    'create': lambda: swords(
       split='dev',
       amt_csv_assets=[
         # Step 2
-        ('sword_dev_1113', 'dev/1112_0_-1_results.csv'),
-        ('sword_dev_1113', 'dev/1112_recollect-a1_results.csv'),
-        ('sword_dev_1113', 'dev/1112_recollect-a2_results.csv'),
-        ('sword_dev_1113', 'dev/1112_recollect_recollect-a1_results.csv'),
+        ('swords_dev_1113', 'dev/1112_0_-1_results.csv'),
+        ('swords_dev_1113', 'dev/1112_recollect-a1_results.csv'),
+        ('swords_dev_1113', 'dev/1112_recollect-a2_results.csv'),
+        ('swords_dev_1113', 'dev/1112_recollect_recollect-a1_results.csv'),
         # Step 3
-        ('sword_step3_1117', 'step 3/dev/1115_dev_results.csv'),
+        ('swords_step3_1117', 'step 3/dev/1115_dev_results.csv'),
       ],
       deny_list_assets=[
         # Spam workers
-        ('sword_test_1113', 'test/worker.txt'),
-        ('sword_step3_1117', 'step 3/worker.txt'),
+        ('swords_test_1113', 'test/worker.txt'),
+        ('swords_step3_1117', 'step 3/worker.txt'),
         # Spam HITS
-        ('sword_dev_1113', 'dev/1112_filter.txt'),
-        ('sword_dev_1113', 'dev/1112_recollect_filter.txt'),
-        ('sword_step3_1117', 'step 3/dev/1115_dev_filter.txt'),
+        ('swords_dev_1113', 'dev/1112_filter.txt'),
+        ('swords_dev_1113', 'dev/1112_recollect_filter.txt'),
+        ('swords_step3_1117', 'step 3/dev/1115_dev_filter.txt'),
       ]),
     'id': 'd:5d6c2b3e350962ee96b807f877a883a14f75be0d'
   },
-  'sword-v0.7_test': {
-    'create': lambda: sword(
+  'swords-v0.7_test': {
+    'create': lambda: swords(
       split='test',
       amt_csv_assets=[
         # Step 2
-        ('sword_test_1113', 'test/1109_0_300_results.csv'),
-        ('sword_test_1113', 'test/1109-2_300_600_results.csv'),
-        ('sword_test_1113', 'test/1109-2_600_-1_results.csv'),
-        ('sword_test_1113', 'test/1109_collect_missing_hits_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect-a1_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect-a2_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect-a3_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect-a1_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect-a2_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect-a3_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_recollect-a1_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_recollect-a2_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_recollect_recollect-a1_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_recollect_recollect_recollect-a1_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_recollect_recollect_recollect-a2_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_recollect_recollect_recollect_recollect-a1_results.csv'),
+        ('swords_test_1113', 'test/1109_0_300_results.csv'),
+        ('swords_test_1113', 'test/1109-2_300_600_results.csv'),
+        ('swords_test_1113', 'test/1109-2_600_-1_results.csv'),
+        ('swords_test_1113', 'test/1109_collect_missing_hits_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect-a1_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect-a2_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect-a3_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect-a1_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect-a2_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect-a3_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_recollect-a1_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_recollect-a2_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_recollect_recollect-a1_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_recollect_recollect_recollect-a1_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_recollect_recollect_recollect-a2_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_recollect_recollect_recollect_recollect-a1_results.csv'),
         # Step 3
-        ('sword_step3_1117', 'step 3/test/1115_test_results.csv'),
+        ('swords_step3_1117', 'step 3/test/1115_test_results.csv'),
       ],
       deny_list_assets=[
         # Spam workers
-        ('sword_test_1113', 'test/worker.txt'),
-        ('sword_step3_1117', 'step 3/worker.txt'),
+        ('swords_test_1113', 'test/worker.txt'),
+        ('swords_step3_1117', 'step 3/worker.txt'),
         # Spam HITS
-        ('sword_test_1113', 'test/1109_0_300_filter.txt'),
-        ('sword_test_1113', 'test/1109-2_300_600_filter.txt'),
-        ('sword_test_1113', 'test/1109-2_600_-1_filter.txt'),
-        ('sword_test_1113', 'test/1109_recollect-a1_filter.txt'),
-        ('sword_test_1113', 'test/1109_recollect-a2_filter.txt'),
-        ('sword_test_1113', 'test/1109_recollect-a3_filter.txt'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_filter.txt'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_recollect_filter.txt'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_recollect_recollect_recollect_filter.txt'),
-        ('sword_step3_1117', 'step 3/test/1115_test_filter.txt'),
+        ('swords_test_1113', 'test/1109_0_300_filter.txt'),
+        ('swords_test_1113', 'test/1109-2_300_600_filter.txt'),
+        ('swords_test_1113', 'test/1109-2_600_-1_filter.txt'),
+        ('swords_test_1113', 'test/1109_recollect-a1_filter.txt'),
+        ('swords_test_1113', 'test/1109_recollect-a2_filter.txt'),
+        ('swords_test_1113', 'test/1109_recollect-a3_filter.txt'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_filter.txt'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_recollect_filter.txt'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_recollect_recollect_recollect_filter.txt'),
+        ('swords_step3_1117', 'step 3/test/1115_test_filter.txt'),
       ]),
       'id': 'd:621280234fe229faabef756e46e1fe4ee62d4f01'
   },
-  'sword-v0.8_dev': {
-    'create': lambda: sword(
+  'swords-v0.8_dev': {
+    'create': lambda: swords(
       split='dev',
       amt_csv_assets=[
         # Step 2
-        ('sword_dev_1113', 'dev/1112_0_-1_results.csv'),
-        ('sword_dev_1113', 'dev/1112_recollect-a1_results.csv'),
-        ('sword_dev_1113', 'dev/1112_recollect-a2_results.csv'),
-        ('sword_dev_1113', 'dev/1112_recollect_recollect-a1_results.csv'),
+        ('swords_dev_1113', 'dev/1112_0_-1_results.csv'),
+        ('swords_dev_1113', 'dev/1112_recollect-a1_results.csv'),
+        ('swords_dev_1113', 'dev/1112_recollect-a2_results.csv'),
+        ('swords_dev_1113', 'dev/1112_recollect_recollect-a1_results.csv'),
         # Step 3
-        ('sword_step3_1117', 'step 3/dev/1115_dev_results.csv'),
-        ('sword_step3_1117', 'step 3/dev/1115_dev_recollect-a1_results.csv'),
-        ('sword_step3_1117', 'step 3/dev/1115_dev_recollect-a2_results.csv'),
-        ('sword_step3_1117', 'step 3/dev/1115_dev_recollect-a3_results.csv'),
-        ('sword_step3_1117', 'step 3/dev/1115_dev_recollect-a4_results.csv'),
-        ('sword_step3_1117', 'step 3/dev/1115_dev_recollect-a6_results.csv'),
+        ('swords_step3_1117', 'step 3/dev/1115_dev_results.csv'),
+        ('swords_step3_1117', 'step 3/dev/1115_dev_recollect-a1_results.csv'),
+        ('swords_step3_1117', 'step 3/dev/1115_dev_recollect-a2_results.csv'),
+        ('swords_step3_1117', 'step 3/dev/1115_dev_recollect-a3_results.csv'),
+        ('swords_step3_1117', 'step 3/dev/1115_dev_recollect-a4_results.csv'),
+        ('swords_step3_1117', 'step 3/dev/1115_dev_recollect-a6_results.csv'),
       ],
       deny_list_assets=[
         # Spam workers
-        ('sword_test_1113', 'test/worker.txt'),
-        ('sword_step3_1117', 'step 3/worker.txt'),
+        ('swords_test_1113', 'test/worker.txt'),
+        ('swords_step3_1117', 'step 3/worker.txt'),
         # Spam HITS
-        ('sword_dev_1113', 'dev/1112_filter.txt'),
-        ('sword_dev_1113', 'dev/1112_recollect_filter.txt'),
-        ('sword_step3_1117', 'step 3/dev/1115_dev_filter.txt'),
+        ('swords_dev_1113', 'dev/1112_filter.txt'),
+        ('swords_dev_1113', 'dev/1112_recollect_filter.txt'),
+        ('swords_step3_1117', 'step 3/dev/1115_dev_filter.txt'),
       ]),
     'id': 'd:7bc0e0b6f47f0ce2cc18c4978682b5e8ee264fd7'
   },
-  'sword-v0.8_dev-train': {
-    'create': lambda: sword(
+  'swords-v0.8_dev-train': {
+    'create': lambda: swords(
       split='train',
       amt_csv_assets=[
         # Step 2
-        ('sword_dev_1113', 'dev/1112_0_-1_results.csv'),
-        ('sword_dev_1113', 'dev/1112_recollect-a1_results.csv'),
-        ('sword_dev_1113', 'dev/1112_recollect-a2_results.csv'),
-        ('sword_dev_1113', 'dev/1112_recollect_recollect-a1_results.csv'),
+        ('swords_dev_1113', 'dev/1112_0_-1_results.csv'),
+        ('swords_dev_1113', 'dev/1112_recollect-a1_results.csv'),
+        ('swords_dev_1113', 'dev/1112_recollect-a2_results.csv'),
+        ('swords_dev_1113', 'dev/1112_recollect_recollect-a1_results.csv'),
         # Step 3
-        ('sword_step3_1117', 'step 3/dev/1115_dev_results.csv'),
-        ('sword_step3_1117', 'step 3/dev/1115_dev_recollect-a1_results.csv'),
-        ('sword_step3_1117', 'step 3/dev/1115_dev_recollect-a2_results.csv'),
-        ('sword_step3_1117', 'step 3/dev/1115_dev_recollect-a3_results.csv'),
-        ('sword_step3_1117', 'step 3/dev/1115_dev_recollect-a4_results.csv'),
-        ('sword_step3_1117', 'step 3/dev/1115_dev_recollect-a6_results.csv'),
+        ('swords_step3_1117', 'step 3/dev/1115_dev_results.csv'),
+        ('swords_step3_1117', 'step 3/dev/1115_dev_recollect-a1_results.csv'),
+        ('swords_step3_1117', 'step 3/dev/1115_dev_recollect-a2_results.csv'),
+        ('swords_step3_1117', 'step 3/dev/1115_dev_recollect-a3_results.csv'),
+        ('swords_step3_1117', 'step 3/dev/1115_dev_recollect-a4_results.csv'),
+        ('swords_step3_1117', 'step 3/dev/1115_dev_recollect-a6_results.csv'),
       ],
       deny_list_assets=[
         # Spam workers
-        ('sword_test_1113', 'test/worker.txt'),
-        ('sword_step3_1117', 'step 3/worker.txt'),
+        ('swords_test_1113', 'test/worker.txt'),
+        ('swords_step3_1117', 'step 3/worker.txt'),
         # Spam HITS
-        ('sword_dev_1113', 'dev/1112_filter.txt'),
-        ('sword_dev_1113', 'dev/1112_recollect_filter.txt'),
-        ('sword_step3_1117', 'step 3/dev/1115_dev_filter.txt'),
+        ('swords_dev_1113', 'dev/1112_filter.txt'),
+        ('swords_dev_1113', 'dev/1112_recollect_filter.txt'),
+        ('swords_step3_1117', 'step 3/dev/1115_dev_filter.txt'),
       ]),
     'id': 'd:83cabe9983c86bb2424a89e20b7a832d7e72fc12'
   },
-  'sword-v0.8_dev-valid': {
-    'create': lambda: sword(
+  'swords-v0.8_dev-valid': {
+    'create': lambda: swords(
       split='valid',
       amt_csv_assets=[
         # Step 2
-        ('sword_dev_1113', 'dev/1112_0_-1_results.csv'),
-        ('sword_dev_1113', 'dev/1112_recollect-a1_results.csv'),
-        ('sword_dev_1113', 'dev/1112_recollect-a2_results.csv'),
-        ('sword_dev_1113', 'dev/1112_recollect_recollect-a1_results.csv'),
+        ('swords_dev_1113', 'dev/1112_0_-1_results.csv'),
+        ('swords_dev_1113', 'dev/1112_recollect-a1_results.csv'),
+        ('swords_dev_1113', 'dev/1112_recollect-a2_results.csv'),
+        ('swords_dev_1113', 'dev/1112_recollect_recollect-a1_results.csv'),
         # Step 3
-        ('sword_step3_1117', 'step 3/dev/1115_dev_results.csv'),
-        ('sword_step3_1117', 'step 3/dev/1115_dev_recollect-a1_results.csv'),
-        ('sword_step3_1117', 'step 3/dev/1115_dev_recollect-a2_results.csv'),
-        ('sword_step3_1117', 'step 3/dev/1115_dev_recollect-a3_results.csv'),
-        ('sword_step3_1117', 'step 3/dev/1115_dev_recollect-a4_results.csv'),
-        ('sword_step3_1117', 'step 3/dev/1115_dev_recollect-a6_results.csv'),
+        ('swords_step3_1117', 'step 3/dev/1115_dev_results.csv'),
+        ('swords_step3_1117', 'step 3/dev/1115_dev_recollect-a1_results.csv'),
+        ('swords_step3_1117', 'step 3/dev/1115_dev_recollect-a2_results.csv'),
+        ('swords_step3_1117', 'step 3/dev/1115_dev_recollect-a3_results.csv'),
+        ('swords_step3_1117', 'step 3/dev/1115_dev_recollect-a4_results.csv'),
+        ('swords_step3_1117', 'step 3/dev/1115_dev_recollect-a6_results.csv'),
       ],
       deny_list_assets=[
         # Spam workers
-        ('sword_test_1113', 'test/worker.txt'),
-        ('sword_step3_1117', 'step 3/worker.txt'),
+        ('swords_test_1113', 'test/worker.txt'),
+        ('swords_step3_1117', 'step 3/worker.txt'),
         # Spam HITS
-        ('sword_dev_1113', 'dev/1112_filter.txt'),
-        ('sword_dev_1113', 'dev/1112_recollect_filter.txt'),
-        ('sword_step3_1117', 'step 3/dev/1115_dev_filter.txt'),
+        ('swords_dev_1113', 'dev/1112_filter.txt'),
+        ('swords_dev_1113', 'dev/1112_recollect_filter.txt'),
+        ('swords_step3_1117', 'step 3/dev/1115_dev_filter.txt'),
       ]),
     'id': 'd:d07d376d966d6fba41143015704c6bdd2831eeb6'
   },
-  'sword-v0.8_test': {
-    'create': lambda: sword(
+  'swords-v0.8_test': {
+    'create': lambda: swords(
       split='test',
       amt_csv_assets=[
         # Step 2
-        ('sword_test_1113', 'test/1109_0_300_results.csv'),
-        ('sword_test_1113', 'test/1109-2_300_600_results.csv'),
-        ('sword_test_1113', 'test/1109-2_600_-1_results.csv'),
-        ('sword_test_1113', 'test/1109_collect_missing_hits_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect-a1_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect-a2_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect-a3_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect-a1_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect-a2_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect-a3_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_recollect-a1_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_recollect-a2_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_recollect_recollect-a1_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_recollect_recollect_recollect-a1_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_recollect_recollect_recollect-a2_results.csv'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_recollect_recollect_recollect_recollect-a1_results.csv'),
+        ('swords_test_1113', 'test/1109_0_300_results.csv'),
+        ('swords_test_1113', 'test/1109-2_300_600_results.csv'),
+        ('swords_test_1113', 'test/1109-2_600_-1_results.csv'),
+        ('swords_test_1113', 'test/1109_collect_missing_hits_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect-a1_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect-a2_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect-a3_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect-a1_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect-a2_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect-a3_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_recollect-a1_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_recollect-a2_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_recollect_recollect-a1_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_recollect_recollect_recollect-a1_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_recollect_recollect_recollect-a2_results.csv'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_recollect_recollect_recollect_recollect-a1_results.csv'),
         # Step 3
-        ('sword_step3_1117', 'step 3/test/1115_test_results.csv'),
-        ('sword_step3_1117', 'step 3/test/1115_test_recollect-a1_results.csv'),
-        ('sword_step3_1117', 'step 3/test/1115_test_recollect-a2_results.csv'),
-        ('sword_step3_1117', 'step 3/test/1115_test_recollect-a3_results.csv'),
+        ('swords_step3_1117', 'step 3/test/1115_test_results.csv'),
+        ('swords_step3_1117', 'step 3/test/1115_test_recollect-a1_results.csv'),
+        ('swords_step3_1117', 'step 3/test/1115_test_recollect-a2_results.csv'),
+        ('swords_step3_1117', 'step 3/test/1115_test_recollect-a3_results.csv'),
       ],
       deny_list_assets=[
         # Spam workers
-        ('sword_test_1113', 'test/worker.txt'),
-        ('sword_step3_1117', 'step 3/worker.txt'),
+        ('swords_test_1113', 'test/worker.txt'),
+        ('swords_step3_1117', 'step 3/worker.txt'),
         # Spam HITS
-        ('sword_test_1113', 'test/1109_0_300_filter.txt'),
-        ('sword_test_1113', 'test/1109-2_300_600_filter.txt'),
-        ('sword_test_1113', 'test/1109-2_600_-1_filter.txt'),
-        ('sword_test_1113', 'test/1109_recollect-a1_filter.txt'),
-        ('sword_test_1113', 'test/1109_recollect-a2_filter.txt'),
-        ('sword_test_1113', 'test/1109_recollect-a3_filter.txt'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_filter.txt'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_recollect_filter.txt'),
-        ('sword_test_1113', 'test/1109_recollect_recollect_recollect_recollect_recollect_filter.txt'),
-        ('sword_step3_1117', 'step 3/test/1115_test_filter.txt'),
+        ('swords_test_1113', 'test/1109_0_300_filter.txt'),
+        ('swords_test_1113', 'test/1109-2_300_600_filter.txt'),
+        ('swords_test_1113', 'test/1109-2_600_-1_filter.txt'),
+        ('swords_test_1113', 'test/1109_recollect-a1_filter.txt'),
+        ('swords_test_1113', 'test/1109_recollect-a2_filter.txt'),
+        ('swords_test_1113', 'test/1109_recollect-a3_filter.txt'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_filter.txt'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_recollect_filter.txt'),
+        ('swords_test_1113', 'test/1109_recollect_recollect_recollect_recollect_recollect_filter.txt'),
+        ('swords_step3_1117', 'step 3/test/1115_test_filter.txt'),
       ]),
     'id': 'd:df8b84ad44d6fc27ff7db9602cf90a70300cd3a3'
   },
-  'sword-v0.8-subset_test': {
+  'swords-v0.8-subset_test': {
     'id': 'd:ea901f1adfe7a766cef7445997183aa9c99fb476',
   },
-  'sword-v0.8-subset-human-baseline_test': {
-    'create': lambda: sword(
+  'swords-v0.8-subset-human-baseline_test': {
+    'create': lambda: swords(
       split='test',
       amt_csv_assets=[
-        ('sword_human_1119', 'superhuman/1119_test_superhuman_results.csv'),
-        ('sword_human_1119', 'superhuman/1119_test_superhuman_recollect-a1_results.csv'),
-        ('sword_human_1119', 'superhuman/1119_test_superhuman_recollect-a2_results.csv'),
-        ('sword_human_1119', 'superhuman/1119_test_superhuman_recollect-a3_results.csv'),
-        ('sword_human_1119', 'superhuman/1119_test_superhuman_recollect-a4_results.csv'),
-        ('sword_human_1119', 'superhuman/1119_test_superhuman_recollect-a5_results.csv'),
-        ('sword_human_1119', 'superhuman/1119_test_superhuman_recollect-a6_results.csv'),
-        ('sword_human_1119', 'superhuman/1119_test_superhuman_recollect-a8_results.csv'),
+        ('swords_human_1119', 'superhuman/1119_test_superhuman_results.csv'),
+        ('swords_human_1119', 'superhuman/1119_test_superhuman_recollect-a1_results.csv'),
+        ('swords_human_1119', 'superhuman/1119_test_superhuman_recollect-a2_results.csv'),
+        ('swords_human_1119', 'superhuman/1119_test_superhuman_recollect-a3_results.csv'),
+        ('swords_human_1119', 'superhuman/1119_test_superhuman_recollect-a4_results.csv'),
+        ('swords_human_1119', 'superhuman/1119_test_superhuman_recollect-a5_results.csv'),
+        ('swords_human_1119', 'superhuman/1119_test_superhuman_recollect-a6_results.csv'),
+        ('swords_human_1119', 'superhuman/1119_test_superhuman_recollect-a8_results.csv'),
       ],
       deny_list_assets=[
-        ('sword_human_1119', 'superhuman/1119_test_superhuman_filter.txt'),
+        ('swords_human_1119', 'superhuman/1119_test_superhuman_filter.txt'),
       ]),
     'id': 'd:8df8a78fa8e8b67325209cc10fb5b506da3f7d0f'
   },
 }
 
 
-def _create_sword_subset():
-  original_dataset = get_dataset('sword-v0.8_test')
-  reannotated_subset = get_dataset('sword-v0.8-subset-human-baseline_test')
+def _create_swords_subset():
+  original_dataset = get_dataset('swords-v0.8_test')
+  reannotated_subset = get_dataset('swords-v0.8-subset-human-baseline_test')
 
   original_subset = LexSubDataset(substitutes_lemmatized=False)
   for tid in reannotated_subset.all_target_ids():
@@ -1288,13 +1288,13 @@ def _create_sword_subset():
 
   return original_subset
 
-DATASETS['sword-v0.8-subset_test']['create'] = _create_sword_subset
+DATASETS['swords-v0.8-subset_test']['create'] = _create_swords_subset
 
 
 for tag, attrs in DATASETS.items():
   DATASETS[tag]['fp'] = os.path.join(DATASETS_CACHE_DIR, f'{tag}.json.gz')
-DATASETS['sword-latest_test'] = DATASETS['sword-v0.8_test']
-DATASETS['sword-latest_dev'] = DATASETS['sword-v0.8_dev']
+DATASETS['swords-latest_test'] = DATASETS['swords-v0.8_test']
+DATASETS['swords-latest_dev'] = DATASETS['swords-v0.8_dev']
 
 
 def get_dataset(dataset, ignore_cache=False, verbose=False):
@@ -1363,7 +1363,7 @@ def main(argv):
     print('-' * 80)
     print(tag)
     try:
-      get_dataset(tag, ignore_cache=True, verbose=True)
+      get_dataset(tag, ignore_cache=False, verbose=True)
     except:
       trace = traceback.format_exc()
       print(trace)
