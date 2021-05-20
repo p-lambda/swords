@@ -1,0 +1,10 @@
+assets/
+.dockerignore
+docker/
+notebooks/
+ref/
+scripts/
+sword.egg-info/
+*__pycache__*
+*.pyc
+.*.swp

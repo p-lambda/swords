@@ -63,4 +63,6 @@ RUN pip install --no-cache-dir -e .
 
 # Create user
 RUN useradd -ms /bin/bash swords
+RUN mkdir notebooks/
+RUN chown -R swords $SWORDS_LIB_DIR
 USER swords

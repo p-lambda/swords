@@ -836,7 +836,7 @@ def rerank_result(dataset, result, ranker, verbose=False):
   return reranked
 
 
-if __name__ == '__main__':
+def main(argv):
   from argparse import ArgumentParser
 
   parser = ArgumentParser()
@@ -861,7 +861,7 @@ if __name__ == '__main__':
       metrics=None,
       verbose=True)
 
-  args = parser.parse_args()
+  args = parser.parse_args(argv)
 
   # Load dataset
   print('-' * 80)

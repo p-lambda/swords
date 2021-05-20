@@ -10,7 +10,7 @@ docker run \
   --name swords \
   -v $(pwd)/../swords:/swords/swords \
   -v $(pwd)/../assets:/swords/assets \
-  -v $(pwd)/../notebooks:/swords/notebooks \
+  -v $(pwd)/../notebooks:/home/swords/notebooks \
   -p 8080:8080 \
   -p 8888:8888 \
   chrisdonahue/swords \
