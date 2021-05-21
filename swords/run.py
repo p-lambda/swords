@@ -156,7 +156,7 @@ def get_result(dataset, generator, verbose=False):
       cls = getattr(importlib.import_module(module), cls)
       _print(f'Created generator from module: {generator}')
     except:
-      raise ValueError('Unknown method')
+      raise ValueError(f'Unknown method: {generator}')
 
   assert any([x is not None for x in [cls, instance, result]])
 
@@ -226,7 +226,7 @@ def rerank_result(dataset, result, ranker, verbose=False):
       module, cls = ranker.rsplit('.', 1)
       cls = getattr(importlib.import_module(module), cls)
     except:
-      raise ValueError('Unknown method')
+      raise ValueError(f'Unknown method: {ranker}')
     _print(f'Created ranker from module: {ranker}')
 
   assert any([x is not None for x in [cls, instance, reranked]])
