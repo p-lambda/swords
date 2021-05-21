@@ -1,6 +1,7 @@
 from collections import defaultdict
 import importlib
 import json
+import os
 import re
 import subprocess
 import tempfile
@@ -427,11 +428,13 @@ def evaluate(dataset, result, allow_abstain=False, skip_preprocessing=False, ver
         all_metrics.update({f'{pre}_{k}':v for k, v in pr_at_k(ref_a, sys_lenient_a, 10, pct=True).items()})
 
     # Evaluate GAP
-    all_metrics.update(evaluate_gap(d_pre, r_pre))
+    if os.path.exists(ASSETS['eval_gap_script']['fp']):
+        all_metrics.update(evaluate_gap(d_pre, r_pre))
 
     # Add legacy metrics
-    all_metrics.update(evaluate_mccarthy(d_pre, r_pre, 'best'))
-    all_metrics.update(evaluate_mccarthy(d_pre, r_pre, 'oot'))
+    if os.path.exists(ASSETS['semeval07']['fp']):
+        all_metrics.update(evaluate_mccarthy(d_pre, r_pre, 'best'))
+        all_metrics.update(evaluate_mccarthy(d_pre, r_pre, 'oot'))
 
     return all_metrics
 

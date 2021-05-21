@@ -58,6 +58,8 @@ RUN mkdir -p $SWORDS_LIB_DIR
 RUN mkdir -p $SWORDS_ASSETS_DIR
 WORKDIR $SWORDS_LIB_DIR
 COPY setup.py setup.py
+RUN mkdir -p $SWORDS_ASSETS_DIR/public/raw
+COPY assets/public/raw/methods $SWORDS_ASSETS_DIR/public/raw/methods
 RUN mkdir swords/
 RUN pip install --no-cache-dir -e .
 
