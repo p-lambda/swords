@@ -18,7 +18,7 @@ from .methods.glove import GloveRanker
 from .methods.gpt3 import GPT3Generator
 from .methods.nonsense import NonsenseGenerator, NonsenseRanker
 from .methods.oracle import Oracle, OracleGenerator, OracleTop1Generator, OracleWithDistractorsGenerator, OracleRanker
-from .methods.semeval07 import SemEval07KUOOT, SemEval07UNTOOT
+#from .methods.semeval07 import SemEval07KUOOT, SemEval07UNTOOT
 #from .methods.thesaurus import ThesaurusRawGenerator, ThesaurusWithTargetLemmatizationAndPosFilteringGenerator
 from .methods.wordtune import WordtuneClues, WordtuneRefine
 
@@ -86,12 +86,6 @@ GENERATORS = {
   },
   'gpt3-swords-v0.8-test': {
     'create': _cache_create_fn_factory(GPT3Generator, 'methods_gpt3_swords-v0.8_test'),
-  },
-  'semeval07-ku': {
-    'create': lambda: SemEval07KUOOT(),
-  },
-  'semeval07-unt': {
-    'create': lambda: SemEval07UNTOOT(),
   },
   # Below is for ranking
   'oracle-plus-distractors': {
