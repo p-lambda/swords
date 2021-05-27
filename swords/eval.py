@@ -426,6 +426,7 @@ def evaluate(dataset, result, allow_abstain=False, skip_preprocessing=False, ver
         ('strict_c', ref_c, sys),
     ]:
         all_metrics.update({f'{pre}_{k}':v for k, v in pr_at_k(r, s, 10, pct=True).items()})
+    all_metrics['strict_c_p@1'] = pr_at_k(ref_c, sys, 1, pct=True)['p@1']
 
     # Evaluate GAP
     if os.path.exists(ASSETS['eval_gap_script']['fp']):

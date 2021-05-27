@@ -18,5 +18,20 @@
     "fp_rel": "raw/data/swords/superhuman-20201119T220851Z-001.zip",
     "checksum": "f9f05b3cc20186a75771fb312815cd51c84a24980c5cdb2c03ac938a0dc10e5b",
     "private": true
+  },
+  "swords_0524": {
+    "fp_rel": "raw/data/swords/step1_tmp.pkl",
+    "checksum": "26653e22b47a0075e9488d49390a4b4724e7d596fa5ade30f052e8b2b93bbfbe",
+    "private": true
+  },
+  "swords_0526": {
+    "fp_rel": "raw/data/swords/filtered_swords_data.pkl",
+    "checksum": "835b6defaf12c33e99af2f432bc7e06c0f01113d144888e7d74371e402bc4045",
+    "private": true
+  },
+  "swords_human_0526": {
+    "fp_rel": "raw/data/swords/filtered_human_baseline_data.pkl",
+    "checksum": "e29bfac5790e6340ce6d2bc1fff5b71139d2cc544193f487f696a96dcdb93de5",
+    "private": true
   }
 }

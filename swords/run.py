@@ -19,7 +19,7 @@ from .methods.gpt3 import GPT3Generator
 from .methods.nonsense import NonsenseGenerator, NonsenseRanker
 from .methods.oracle import Oracle, OracleGenerator, OracleTop1Generator, OracleWithDistractorsGenerator, OracleRanker
 #from .methods.semeval07 import SemEval07KUOOT, SemEval07UNTOOT
-#from .methods.thesaurus import ThesaurusRawGenerator, ThesaurusWithTargetLemmatizationAndPosFilteringGenerator
+from .methods.rogets import RogetsThesaurusRawGenerator, RogetsThesaurusWithTargetLemmatizationAndPosFilteringGenerator
 from .methods.wordtune import WordtuneClues, WordtuneRefine
 
 
@@ -49,10 +49,10 @@ GENERATORS = {
     'create': lambda d: OracleGenerator(d, threshold=0.1),
   },
   'swords-reannotated-test-acceptable': {
-    'create': lambda: OracleGenerator(get_dataset('swords-v0.8-subset-human-baseline_test'), threshold=0.5+1e-4),
+    'create': lambda: OracleGenerator(get_dataset('swords-v1.0_test-subset_reannotated'), threshold=0.5+1e-4),
   },
   'swords-reannotated-test-conceivable': {
-    'create': lambda: OracleGenerator(get_dataset('swords-v0.8-subset-human-baseline_test'), threshold=0.1),
+    'create': lambda: OracleGenerator(get_dataset('swords-v1.0_test-subset_reannotated'), threshold=0.1),
   },
   'coinco-test': {
     'create': lambda: CoincoTestOracleGenerator(threshold=1),
@@ -60,12 +60,12 @@ GENERATORS = {
   'coinco-dev': {
     'create': lambda: CoincoTestOracleGenerator(threshold=1, split='dev'),
   },
-  #'thesaurus-raw': {
-  #  'create': lambda: ThesaurusRawGenerator(),
-  #},
-  #'thesaurus': {
-  #  'create': lambda: ThesaurusWithTargetLemmatizationAndPosFilteringGenerator(),
-  #},
+  'thesaurus-raw': {
+    'create': lambda: RogetsThesaurusRawGenerator(),
+  },
+  'thesaurus': {
+    'create': lambda: RogetsThesaurusWithTargetLemmatizationAndPosFilteringGenerator(),
+  },
   'bert-based-ls': {
     'create': lambda: BertInfillingGenerator(target_corruption='dropout', dropout_p=0.3, top_k=50),
   },
@@ -92,7 +92,7 @@ GENERATORS = {
     'create': lambda d: OracleWithDistractorsGenerator(d),
   },
   'swords-reannotated-test-all': {
-    'create': lambda: OracleWithDistractorsGenerator(get_dataset('swords-v0.8-subset-human-baseline_test')),
+    'create': lambda: OracleWithDistractorsGenerator(get_dataset('swords-v1.0_test-subset_reannotated')),
   },
 }
 

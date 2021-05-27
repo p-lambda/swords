@@ -7,6 +7,7 @@ import html
 from io import StringIO
 import json
 import os
+import pickle
 import re
 import traceback
 import warnings
@@ -866,6 +867,94 @@ def swords(
   return d
 
 
+def swords_release(split='test', max_labels=10, reannotated=False):
+  asset_tag = 'swords_0526'
+  if reannotated:
+    asset_tag = 'swords_human_0526'
+  with open(ASSETS[asset_tag]['fp'], 'rb') as f:
+    raw = pickle.load(f)
+
+  subset_tids = None
+  if split == 'subset' and not reannotated:
+    subset_tids = set(swords_release(split='subset', reannotated=True).all_target_ids())
+
+  swords_old_split = 'test' if split == 'subset' else split
+  swords_old = get_dataset(f'swords-v0.8_{swords_old_split}')
+
+  d = LexSubDataset(substitutes_lemmatized=True)
+  for i, s in enumerate(raw):
+    assert s['split'] in ['dev', 'test', 'subset']
+    if subset_tids is None and s['split'] != split:
+      continue
+    if subset_tids is not None and s['target_id'] not in subset_tids:
+      continue
+    assert len(s['wprime']) > 0
+    
+    newly_collected = len(s['wprime_id']) == 0
+    pos = Pos[s['pos']]
+    if reannotated:
+      labels = s['step3_labels']
+      assert len(labels) == 10
+    elif len(s['step2_labels']) > 0:
+      labels = s['step2_labels']
+      assert len(labels) == 10
+    else:
+      labels = s['step1_labels']
+      assert len(labels) == 3
+    labels = [Label[l] for l in labels]
+    cid = s['id']
+    context_old = swords_old.get_context(cid)
+    tid = s['target_id']
+    target_old = swords_old.get_target(tid)
+    sid = LexSubDataset.substitute_id(LexSubDataset.create_substitute(s['target_id'], s['wprime_lemma']))
+    
+    assert len(s['wprime_id']) in [0, 42]
+    if not newly_collected:
+      assert swords_old.has_substitute(s['wprime_id'])
+      assert s['wprime_id'] == sid
+    assert (s['s_left'] + s['w'] + s['s_right']) == s['s']
+    assert len(s['s_left']) == s['off']
+
+    # Add context
+    coinco_ids = [e['legacy_id'] for e in context_old['extra']]
+    if d.has_target(cid):
+      coinco_ids = d.get_context(cid)['extra']['coinco_ids'] + coinco_ids
+    _cid = d.add_context(s['s'], extra={
+      'coinco_ids': coinco_ids
+    }, update_ok=True)
+    assert _cid == cid
+
+    # Add target
+    coinco_ids = [e['legacy_id'] for e in target_old['extra']]
+    coinco_lemmas = [e['coinco']['xml_attrs']['lemma'] for e in target_old['extra']]
+    assert len(set(coinco_lemmas)) == 1
+    coinco_lemma = coinco_lemmas[0]
+    assert coinco_lemma == s['w_lemma']
+    if d.has_target(tid):
+      coinco_ids += d.get_target(tid)['extra']['coinco_ids']
+      assert coinco_lemma == d.get_target(tid)['extra']['coinco_lemma']
+    coinco_ids = sorted(list(set(coinco_ids)), key=lambda x: int(x))
+    _tid = d.add_target(cid, s['w'], s['off'], pos=pos, extra={
+      'coinco_ids': coinco_ids,
+      'coinco_lemma': coinco_lemma
+    }, update_ok=True)
+    assert _tid == tid
+    
+    # Add substitute
+    if d.has_substitute(sid):
+      labels = d.get_substitute_labels(sid) + labels
+    # NOTE: Handful of instances where we have 20 labels due to case-sensitivity (TV and PC)
+    if max_labels is not None:
+      labels = labels[:max_labels]
+    assert s['wprime_lemma'] == s['wprime']
+    _sid = d.add_substitute(tid, s['wprime_lemma'], labels, extra={
+      'sources': sorted(s['wprime_source'].split(';')),
+    }, update_ok=True)
+    assert _sid == sid
+
+  return d
+
+
 DATASETS = {
   'semeval07_trial': {
     'create': lambda: semeval07(split='trial'),
@@ -1264,6 +1353,54 @@ DATASETS = {
       ]),
     'id': 'd:8df8a78fa8e8b67325209cc10fb5b506da3f7d0f'
   },
+  'swords-v0.9.0_dev': {
+    'create': lambda: swords_release(split='dev', max_labels=None),
+    'id': 'd:16697c27d513aa2637045ae177f51efa79de4e9a'
+  },
+  'swords-v0.9.0_test': {
+    'create': lambda: swords_release(split='test', max_labels=None),
+    'id': 'd:3676d10c2eb58e716505fe0c8840750627e7268a'
+  },
+  'swords-v0.9.0_test-subset': {
+    'create': lambda: swords_release(split='subset', max_labels=None),
+    'id': 'd:4525bb65d38147660e5b5eb1282ee555e5aff934'
+  },
+  'swords-v0.9.0_test-subset_reannotated': {
+    'create': lambda: swords_release(split='subset', max_labels=None, reannotated=True),
+    'id': 'd:f228b059eea7e0b2513b672fa651d20b33278f11'
+  },
+  'swords-v0.9.1_dev': {
+    'create': lambda: swords_release(split='dev'),
+    'id': 'd:16697c27d513aa2637045ae177f51efa79de4e9a'
+  },
+  'swords-v0.9.1_test': {
+    'create': lambda: swords_release(split='test'),
+    'id': 'd:018c2d54e042d91a38f33a027009e08a38e7aba8'
+  },
+  'swords-v0.9.1_test-subset': {
+    'create': lambda: swords_release(split='subset'),
+    'id': 'd:50396a093da867b578160049cead448514b339b6'
+  },
+  'swords-v0.9.1_test-subset_reannotated': {
+    'create': lambda: swords_release(split='subset', reannotated=True),
+    'id': 'd:9f438a458cd5a07a4fe1f186c1189076dc1e5333'
+  },
+  'swords-v1.0_dev': {
+    'create': lambda: swords_release(split='dev'),
+    'id': 'd:16697c27d513aa2637045ae177f51efa79de4e9a'
+  },
+  'swords-v1.0_test': {
+    'create': lambda: swords_release(split='test'),
+    'id': 'd:018c2d54e042d91a38f33a027009e08a38e7aba8'
+  },
+  'swords-v1.0_test-subset': {
+    'create': lambda: swords_release(split='subset'),
+    'id': 'd:50396a093da867b578160049cead448514b339b6'
+  },
+  'swords-v1.0_test-subset_reannotated': {
+    'create': lambda: swords_release(split='subset', reannotated=True),
+    'id': 'd:9f438a458cd5a07a4fe1f186c1189076dc1e5333'
+  },
 }
 
 
@@ -1293,8 +1430,8 @@ DATASETS['swords-v0.8-subset_test']['create'] = _create_swords_subset
 
 for tag, attrs in DATASETS.items():
   DATASETS[tag]['fp'] = os.path.join(DATASETS_CACHE_DIR, f'{tag}.json.gz')
-DATASETS['swords-latest_test'] = DATASETS['swords-v0.8_test']
-DATASETS['swords-latest_dev'] = DATASETS['swords-v0.8_dev']
+DATASETS['swords-latest_test'] = DATASETS['swords-v1.0_test']
+DATASETS['swords-latest_dev'] = DATASETS['swords-v1.0_dev']
 
 
 def get_dataset(dataset, ignore_cache=False, verbose=False):
