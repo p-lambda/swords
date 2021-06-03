@@ -8,9 +8,11 @@ docker run \
   --cpuset-cpus ${AVAILABLE_CPUS} \
   --gpus device=${AVAILABLE_GPUS} \
   --name swords \
+  -u $(id -u):$(id -g) \
   -v $(pwd)/../swords:/swords/swords \
   -v $(pwd)/../assets:/swords/assets \
-  -v $(pwd)/../notebooks:/home/swords/notebooks \
+  -v $(pwd)/../notebooks:/swords/notebooks \
+  -v ~/.local:/.local \
   -p 8080:8080 \
   -p 8888:8888 \
   chrisdonahue/swords \
