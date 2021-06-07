@@ -49,10 +49,10 @@ GENERATORS = {
     'create': lambda d: OracleGenerator(d, threshold=0.1),
   },
   'swords-reannotated-test-acceptable': {
-    'create': lambda: OracleGenerator(get_dataset('swords-v1.0_test-subset_reannotated'), threshold=0.5+1e-4),
+    'create': lambda: OracleGenerator(get_dataset('swords-v1.1_test-subset_reannotated'), threshold=0.5+1e-4),
   },
   'swords-reannotated-test-conceivable': {
-    'create': lambda: OracleGenerator(get_dataset('swords-v1.0_test-subset_reannotated'), threshold=0.1),
+    'create': lambda: OracleGenerator(get_dataset('swords-v1.1_test-subset_reannotated'), threshold=0.1),
   },
   'coinco-test': {
     'create': lambda: CoincoTestOracleGenerator(threshold=1),
@@ -92,7 +92,7 @@ GENERATORS = {
     'create': lambda d: OracleWithDistractorsGenerator(d),
   },
   'swords-reannotated-test-all': {
-    'create': lambda: OracleWithDistractorsGenerator(get_dataset('swords-v1.0_test-subset_reannotated')),
+    'create': lambda: OracleWithDistractorsGenerator(get_dataset('swords-v1.1_test-subset_reannotated')),
   },
 }
 

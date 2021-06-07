@@ -867,16 +867,16 @@ def swords(
   return d
 
 
-def swords_release(split='test', max_labels=10, reannotated=False):
-  asset_tag = 'swords_0526'
+def swords_release(split='test', max_labels=10, reannotated=False, stamp='0526'):
+  asset_tag = f'swords_{stamp}'
   if reannotated:
-    asset_tag = 'swords_human_0526'
+    asset_tag = f'swords_human_{stamp}'
   with open(ASSETS[asset_tag]['fp'], 'rb') as f:
     raw = pickle.load(f)
 
   subset_tids = None
   if split == 'subset' and not reannotated:
-    subset_tids = set(swords_release(split='subset', reannotated=True).all_target_ids())
+    subset_tids = set(swords_release(split='subset', reannotated=True, stamp=stamp).all_target_ids())
 
   swords_old_split = 'test' if split == 'subset' else split
   swords_old = get_dataset(f'swords-v0.8_{swords_old_split}')
@@ -892,15 +892,19 @@ def swords_release(split='test', max_labels=10, reannotated=False):
     
     newly_collected = len(s['wprime_id']) == 0
     pos = Pos[s['pos']]
-    if reannotated:
-      labels = s['step3_labels']
-      assert len(labels) == 10
-    elif len(s['step2_labels']) > 0:
-      labels = s['step2_labels']
-      assert len(labels) == 10
+    if stamp == '0607':
+      labels = s['labels']
+      assert len(labels) in [3, 10]
     else:
-      labels = s['step1_labels']
-      assert len(labels) == 3
+      if reannotated:
+        labels = s['step3_labels']
+        assert len(labels) == 10
+      elif len(s['step2_labels']) > 0:
+        labels = s['step2_labels']
+        assert len(labels) == 10
+      else:
+        labels = s['step1_labels']
+        assert len(labels) == 3
     labels = [Label[l] for l in labels]
     cid = s['id']
     context_old = swords_old.get_context(cid)
@@ -909,7 +913,7 @@ def swords_release(split='test', max_labels=10, reannotated=False):
     sid = LexSubDataset.substitute_id(LexSubDataset.create_substitute(s['target_id'], s['wprime_lemma']))
     
     assert len(s['wprime_id']) in [0, 42]
-    if not newly_collected:
+    if stamp != '0607' and not newly_collected:
       assert swords_old.has_substitute(s['wprime_id'])
       assert s['wprime_id'] == sid
     assert (s['s_left'] + s['w'] + s['s_right']) == s['s']
@@ -947,8 +951,12 @@ def swords_release(split='test', max_labels=10, reannotated=False):
     if max_labels is not None:
       labels = labels[:max_labels]
     assert s['wprime_lemma'] == s['wprime']
+    if stamp == '0607':
+      sources = s['wprime_source']
+    else:
+      sources = s['wprime_source'].split(';')
     _sid = d.add_substitute(tid, s['wprime_lemma'], labels, extra={
-      'sources': sorted(s['wprime_source'].split(';')),
+      'sources': sorted(sources),
     }, update_ok=True)
     assert _sid == sid
 
@@ -1401,6 +1409,22 @@ DATASETS = {
     'create': lambda: swords_release(split='subset', reannotated=True),
     'id': 'd:9f438a458cd5a07a4fe1f186c1189076dc1e5333'
   },
+  'swords-v1.1_dev': {
+    'create': lambda: swords_release(split='dev', stamp='0607'),
+    'id': 'd:651209c901f26925691f9a8ceb2c8da1054cded8'
+  },
+  'swords-v1.1_test': {
+    'create': lambda: swords_release(split='test', stamp='0607'),
+    'id': 'd:76d1aba7700f7d9f9a7ddffe73b8f0e1cb2925fa'
+  },
+  'swords-v1.1_test-subset': {
+    'create': lambda: swords_release(split='subset', stamp='0607'),
+    'id': 'd:4df7c9ce25c4abb0d3d42c0ecc70e6e3a96f3932'
+  },
+  'swords-v1.1_test-subset_reannotated': {
+    'create': lambda: swords_release(split='subset', reannotated=True, stamp='0607'),
+    'id': 'd:acf8b87a1046f6fe7ec7eae30f129ccbd2c1cc1f'
+  }
 }
 
 
@@ -1430,8 +1454,8 @@ DATASETS['swords-v0.8-subset_test']['create'] = _create_swords_subset
 
 for tag, attrs in DATASETS.items():
   DATASETS[tag]['fp'] = os.path.join(DATASETS_CACHE_DIR, f'{tag}.json.gz')
-DATASETS['swords-latest_test'] = DATASETS['swords-v1.0_test']
-DATASETS['swords-latest_dev'] = DATASETS['swords-v1.0_dev']
+DATASETS['swords-latest_test'] = DATASETS['swords-v1.1_test']
+DATASETS['swords-latest_dev'] = DATASETS['swords-v1.1_dev']
 
 
 def get_dataset(dataset, ignore_cache=False, verbose=False):

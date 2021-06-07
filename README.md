@@ -22,8 +22,8 @@ While Docker is great for reproducibility, it can be cumbersome for prototyping.
 
 The SWORDS dev and test sets can be downloaded from the following links:
 
-- [SWORDS development set](assets/parsed/swords-v1.0_dev.json.gz?raw=1)
-- [SWORDS test set](assets/parsed/swords-v1.0_test.json.gz?raw=1)
+- [SWORDS development set](assets/parsed/swords-v1.1_dev.json.gz?raw=1)
+- [SWORDS test set](assets/parsed/swords-v1.1_test.json.gz?raw=1)
 
 SWORDS is published under the permissive [CC-BY-3.0-US license](https://creativecommons.org/licenses/by/3.0/us/). SWORDS includes content from the [CoInCo dataset](https://www.ims.uni-stuttgart.de/en/research/resources/corpora/coinco/) and the [MASC corpus](http://www.anc.org/data/masc/), which are both distributed under the same license.
 
@@ -55,7 +55,7 @@ import gzip
 import json
 
 # Load dataset
-with gzip.open('swords-v1.0_dev.json.gz', 'r') as f:
+with gzip.open('swords-v1.1_dev.json.gz', 'r') as f:
   swords = json.load(f)
 
 # Gather substitutes by target
@@ -112,9 +112,9 @@ Once the Docker image is running via `run.sh`, you can **interact with the `swor
 
 1. Download the required files for creating the SemEval07 dataset: `./cli.sh assets semeval07`
 1. Parse the SemEval07 dataset into common JSON format: `./cli.sh parse semeval07`
-1. Run BERT-based Lexical Substitution ([Zhou et al. 2019](https://www.aclweb.org/anthology/P19-1328/)) on the SWORDS development set (GPU recommended): `./cli.sh run swords-v1.0_dev --generator bert-based-ls --output_result_json_fp notebooks/swords_dev_bbls.result.json`
+1. Run BERT-based Lexical Substitution ([Zhou et al. 2019](https://www.aclweb.org/anthology/P19-1328/)) on the SWORDS development set (GPU recommended): `./cli.sh run swords-v1.1_dev --generator bert-based-ls --output_result_json_fp notebooks/swords_dev_bbls.result.json`
 1. Download the required files for evaluating traditional LS metrics: `./cli.sh assets semeval07; ./cli.sh assets eval`
-1. Evaluate the result from the previous step: `./cli.sh eval swords-v1.0_dev --result_json_fp notebooks/swords_dev_bbls.result.json --output_metrics_json_fp notebooks/swords_dev_bbls.metrics.json`
+1. Evaluate the result from the previous step: `./cli.sh eval swords-v1.1_dev --result_json_fp notebooks/swords_dev_bbls.result.json --output_metrics_json_fp notebooks/swords_dev_bbls.metrics.json`
 
 You can also run `./shell.sh` to launch an interactive bash shell in the Docker container, or `./notebook.sh` to launch a Jupyter notebook server with all dependencies pre-configured.
 
@@ -132,7 +132,7 @@ import json
 import random
 import warnings
 
-with gzip.open('swords-v1.0_dev.json.gz', 'r') as f:
+with gzip.open('swords-v1.1_dev.json.gz', 'r') as f:
   swords = json.load(f)
 
 def generate(
@@ -174,7 +174,7 @@ for tid, target in swords['targets'].items():
 if errors > 0:
     warnings.warn(f'{errors} targets were not evaluated due to errors')
 
-with open('swords-v1.0_dev_mygenerator.lsr.json', 'w') as f:
+with open('swords-v1.1_dev_mygenerator.lsr.json', 'w') as f:
   f.write(json.dumps(result))
 ```
 
@@ -188,7 +188,7 @@ import json
 import random
 import warnings
 
-with gzip.open('swords-v1.0_dev.json.gz', 'r') as f:
+with gzip.open('swords-v1.1_dev.json.gz', 'r') as f:
   swords = json.load(f)
 
 def score(
@@ -236,12 +236,25 @@ for sid, substitute in swords['substitutes'].items():
 if errors > 0:
     warnings.warn(f'{errors} substitutes were not evaluated due to errors')
 
-with open('swords-v1.0_dev_myranker.lsr.json', 'w') as f:
+with open('swords-v1.1_dev_myranker.lsr.json', 'w') as f:
   f.write(json.dumps(result))
 ```
 
 ### Evaluating your lexical substiution strategy
 
-To evaluate the example generator above, copy `swords-v1.0_dev_mygenerator.lsr.json` into the `notebooks` directory (to transfer it to Docker) and run: `./cli.sh eval swords-v1.0_dev --result_json_fp notebooks/swords-v1.0_dev_mygenerator.lsr.json --output_metrics_json_fp notebooks/mygenerator.metrics.json`
+To evaluate the example generator above, copy `swords-v1.1_dev_mygenerator.lsr.json` into the `notebooks` directory (to transfer it to Docker) and run: `./cli.sh eval swords-v1.1_dev --result_json_fp notebooks/swords-v1.1_dev_mygenerator.lsr.json --output_metrics_json_fp notebooks/mygenerator.metrics.json`
 
-To evaluate the example ranker above, copy `swords-v1.0_dev_myranker.lsr.json` into the `notebooks` directory and run: `./cli.sh eval swords-v1.0_dev --result_json_fp notebooks/swords-v1.0_dev_myranker.lsr.json --output_metrics_json_fp notebooks/myranker.metrics.json --metrics gap_rat`
+To evaluate the example ranker above, copy `swords-v1.1_dev_myranker.lsr.json` into the `notebooks` directory and run: `./cli.sh eval swords-v1.1_dev --result_json_fp notebooks/swords-v1.1_dev_myranker.lsr.json --output_metrics_json_fp notebooks/myranker.metrics.json --metrics gap_rat`
+
+## Citation
+
+If you use SWORDS in your work, please consider citing our paper:
+
+```
+@inproceedings{lee2021swords,
+  title={{SWORDS}: A benchmark for lexical substitution with improved data coverage and quality},
+  author={Lee, Mina and Donahue, Chris and Jia, Robin and Iyabor, Alexander and Liang, Percy},
+  booktitle={NAACL},
+  year={2021}
+}
+```

@@ -33,5 +33,15 @@
     "fp_rel": "raw/data/swords/filtered_human_baseline_data.pkl",
     "checksum": "e29bfac5790e6340ce6d2bc1fff5b71139d2cc544193f487f696a96dcdb93de5",
     "private": true
+  },
+  "swords_0607": {
+    "fp_rel": "raw/data/swords/swords_repaired_wprimes_with_false_implicit_coinco.pkl",
+    "checksum": "f97b9862ae91fe0286bfe94ad7fb06a5493a6afab22de8e3c42ae260fac5db9e",
+    "private": true
+  },
+  "swords_human_0607": {
+    "fp_rel": "raw/data/swords/human_baseline_data_repaired_wprimes_with_false_implicit_coinco.pkl",
+    "checksum": "abbff3d1595ffb77c73fb0e488fcd4c140bef2be53d286474d2a6c1aa309abf2",
+    "private": true
   }
 }
