@@ -261,7 +261,7 @@ To evaluate the example ranker above, copy `swords-v1.1_dev_myranker.lsr.json` i
 
 If you use Swords ⚔️ in your work, please consider citing our paper:
 
-Mina Lee*, Chris Donahue*, Robin Jia, Alexander Iyabor, and Percy Liang. NAACL 2021. [Swords: A Benchmark for Lexical Substitution with Improved Data Coverage and Quality](https://www.aclweb.org/anthology/2021.naacl-main.345/).
+Mina Lee*, Chris Donahue*, Robin Jia, Alexander Iyabor, and Percy Liang. NAACL 2021. [Swords: A Benchmark for Lexical Substitution with Improved Data Coverage and Quality](https://arxiv.org/abs/2106.04102).
 
 ```
 @inproceedings{lee-etal-2021-swords,
@@ -276,7 +276,7 @@ Mina Lee*, Chris Donahue*, Robin Jia, Alexander Iyabor, and Percy Liang. NAACL 2
     year = "2021",
     address = "Online",
     publisher = "Association for Computational Linguistics",
-    url = "https://www.aclweb.org/anthology/2021.naacl-main.345",
+    url = "https://arxiv.org/abs/2106.04102",
     pages = "4362--4379"
 }
 ```
