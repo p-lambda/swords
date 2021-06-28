@@ -256,6 +256,22 @@ To evaluate the example generator above, copy `swords-v1.1_dev_mygenerator.lsr.j
 
 To evaluate the example ranker above, copy `swords-v1.1_dev_myranker.lsr.json` into the `notebooks` directory and run: `./cli.sh eval swords-v1.1_dev --result_json_fp notebooks/swords-v1.1_dev_myranker.lsr.json --output_metrics_json_fp notebooks/myranker.metrics.json --metrics gap_rat`
 
+#### Without Docker
+
+We highly recommend running our evaluation script within Docker, as subtle differences in Python dependency versions can result in unreproducible numbers. However, if you cannot run Docker, you can try to reproduce our evaluation environment via `virtualenv` as follows:
+
+```sh
+git clone git@github.com:p-lambda/swords.git
+cd swords
+virtualenv venv
+source venv/bin/active
+pip install nltk==3.5
+python -m nltk.downloader wordnet
+pip install requests==2.25.1
+pip install numpy==1.19.5
+pip install -e .
+python -m swords.cli eval swords-v1.1_dev --result_json_fp <YOUR_RESULTS_FILE>
+```
 
 ## Citation
 
