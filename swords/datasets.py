@@ -1501,9 +1501,9 @@ def get_dataset(dataset, ignore_cache=False, verbose=False):
     # Load from disk
     _print('Loading from {dataset}')
     if dataset.endswith('.gz'):
-      open_fn = open
-    else:
       open_fn = gzip.open
+    else:
+      open_fn = open
     with open_fn(dataset, 'r') as f:
       d = LexSubDataset.from_dict(json.load(f))
   else:
